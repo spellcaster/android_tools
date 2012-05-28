@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="qp_airplane_text">Airplane</string>
+    <string name="qp_autosync_text">Auto Sync</string>
+    <string name="qp_bluetooth_text">Bluetooth</string>
+    <string name="qp_brightness_text">Brightness</string>
+    <string name="qp_dc_text">Data</string>
+    <string name="qp_flashlight_text">Flashlight</string>
+    <string name="qp_gps_text">GPS</string>
+    <string name="qp_lockscreen_text">Lockscreen</string>
+    <string name="qp_no">Cancel</string>
+    <string name="qp_reboot_dlg_title">Reboot phone</string>
+    <string name="qp_reboot_download">Download</string>
+    <string name="qp_reboot_now">Reboot</string>
+    <string name="qp_reboot_recovery">Recovery</string>
+    <string name="qp_reboot_text">Reboot</string>
+    <string name="qp_rotation_text">Auto Rotation</string>
+    <string name="qp_screen_timeout_hr">hour(s)</string>
+    <string name="qp_screen_timeout_min">minute(s)</string>
+    <string name="qp_screen_timeout_prefix">Screen timeout set to:\u0020</string>
+    <string name="qp_screen_timeout_sec">second(s)</string>
+    <string name="qp_screen_timeout_text">Screen Timeout</string>
+    <string name="qp_shutdown_text">Shutdown</string>
+    <string name="qp_silent_text">Silent</string>
+    <string name="qp_sound_text">Sound</string>
+    <string name="qp_sound_vibration_text">Sound Vibration</string>
+    <string name="qp_vibration_text">Vibration</string>
+    <string name="qp_wifi_text">WiFi</string>
+    <string name="qp_yes">OK</string>
+</resources>
