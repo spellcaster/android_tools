@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.android.systemui.statusbar.preference.QuickSettings android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/status_bar_title_font_size" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/title_bar" android:background="@drawable/status_bar_header_background" android:paddingLeft="9.0sp" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_title_height" android:scaleType="fitXY" android:text="@string/status_bar_quick_settings" />
+    <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/scroll_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/config" android:layout="@layout/quick_settings_config" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/brightness" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/rotation" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/wifi" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/hotspot" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/network" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/wimax" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/bluetooth" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/gps" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/airplane_mode" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/power_efficiency" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/settings" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/task_manager" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/carrier_app" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/volume" android:layout="@layout/status_bar_preference" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</com.android.systemui.statusbar.preference.QuickSettings>

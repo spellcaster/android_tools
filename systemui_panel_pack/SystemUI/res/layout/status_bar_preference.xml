@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.android.systemui.statusbar.preference.PreferenceView android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/status_bar_item_background" android:paddingRight="5.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_preference_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="@dimen/quick_settings_icon_weight" android:layout_height="@dimen/quick_settings_icon_height" android:layout_marginLeft="@dimen/quick_settings_icon_left_margin" android:layout_marginRight="@dimen/quick_settings_icon_right_margin" />
+        <LinearLayout android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@33882153" android:textColor="@color/list_item_primary_text" android:id="@id/title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0px" />
+            <TextView android:textSize="@33882158" android:textColor="@color/list_item_secondary_text" android:id="@id/summary" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.android.systemui.statusbar.widget.SeekBar android:id="@id/seekbar" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <CheckBox android:id="@id/checkbox" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/divider" android:background="@drawable/divider_horizontal_light_opaque" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.android.systemui.statusbar.preference.PreferenceView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@33882191" android:layout_marginTop="@33882193" android:layout_marginRight="@33882192" android:layout_marginBottom="@33882193"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@33882153" android:textColor="@color/primary_text_color" android:layout_gravity="left" android:id="@id/remind_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@33882191" android:layout_marginRight="@33882192" android:text="@string/vzw_remind_dialog_message" />
+    <CheckBox android:textSize="@33882153" android:textColor="@color/primary_text_color" android:layout_gravity="left" android:id="@id/remind_dialog_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@33882191" android:layout_marginRight="@33882192" android:text="@string/dont_remind_again" android:singleLine="true" />
+</LinearLayout>
