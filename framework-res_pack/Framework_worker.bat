@@ -63,8 +63,7 @@ goto Step%step%
 
 echo ### Step 1. Decompile %Framework%.apk to %CDir%\%Framework%
 
-rd /s/q %CDir%\%Framework% 2> nul
-java -jar %CDir%\apktool.jar d -s %CDir%\%Framework%.apk %CDir%\%Framework%
+java -jar %CDir%\apktool.jar d -s -f %CDir%\%Framework%.apk %CDir%\%Framework%
 
 if errorlevel 1 goto :Err
 set /a step=%step%+1

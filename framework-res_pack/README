@@ -5,7 +5,7 @@
 Требования:
 	* Установленная Java (JDK)
 	* Папка, в которой будут размещены файлы Пакета, не должна иметь в пути пробелов и не-латинских символов
-	* На целевом девайсе: права рута и доступ на запись в /system/app	
+	* На целевом девайсе: права рута и доступ на запись в /system/framework	
 
 Состав пакета:
 
@@ -32,7 +32,7 @@
 
 Если всё благополучно, скрипт завершится без ошибок, а итоговое приложение будет сохранено как framework-res_mod.apk
 
-6) Записать framework-res_mod.apk на целевой девайс в /system/app (предварительно переименовать в framework-res.apk). Перегрузить девайс.
+6) Записать framework-res_mod.apk на целевой девайс в /system/framework (предварительно переименовать в framework-res.apk). Перегрузить девайс.
 Через adb это делается так:
-	adb push framework-res_mod.apk /system/app/framework-res.apk
+	adb push framework-res_mod.apk /system/framework/framework-res.apk
 	adb reboot
