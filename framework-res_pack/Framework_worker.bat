@@ -42,20 +42,19 @@ if not exist "%CDir%\7za.exe" (
 set step=1
 
 :Prompt
-
 echo ==============================
 echo Select a step to perform
 echo 1. Decompile %Framework%.apk
 echo 2. Compile %Framework%.apk
 echo 3. Build final apk
 echo 4. Quit
+set input_step=
 set /p input_step=Enter step number ^(Enter: step !step!^) 
 
 IF "!input_step!" NEQ "" (
 	set step=!input_step!
 )
-
-goto Step%step%
+goto Step!step!
 
 :: 1. Разобрать framework-res.apk
 
@@ -63,10 +62,14 @@ goto Step%step%
 
 echo ### Step 1. Decompile %Framework%.apk to %CDir%\%Framework%
 
+:: (Re)Install all the frameworks (sometimes required)
+rd /s/q "%HOMEDRIVE%%HOMEPATH%\apktool\framework" 2> nul
+FOR %%F IN (%CDir%\framework\*.apk) DO java -jar %CDir%\apktool.jar if %%F
+
 java -jar %CDir%\apktool.jar d -s -f %CDir%\%Framework%.apk %CDir%\%Framework%
 
 if errorlevel 1 goto :Err
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 2. Собрать framework-res.apk
@@ -84,7 +87,7 @@ if errorlevel 1 goto :Err
 xcopy %CDir%\%Framework%\assets %CDir%\%Framework%\build\apk\assets /e /i /y
 
 if errorlevel 1 goto :Err
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 3. Собрать итоговый apk
@@ -108,7 +111,7 @@ setlocal EnableDelayedExpansion
 cd %CDir%
 
 if errorlevel 1 goto :Err
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :Step4

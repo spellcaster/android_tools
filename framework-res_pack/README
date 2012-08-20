@@ -2,10 +2,11 @@
 
 Тема по редактированию framework-res: http://4pda.ru/forum/index.php?showtopic=196047
 
-Требования:
+Требования для работы:
 	* Установленная Java (JDK)
 	* Папка, в которой будут размещены файлы Пакета, не должна иметь в пути пробелов и не-латинских символов
-	* На целевом девайсе: права рута и доступ на запись в /system/framework	
+Требования для установки:
+	* На целевом девайсе - права рута и доступ на запись в /system/framework	
 
 Состав пакета:
 
@@ -13,6 +14,7 @@
 		\7za.exe - архиватор
 		\apktool.jar - программа для сборки-разборки apk
 		\aapt.exe - программа, требующаяся для сборки apk
+		\aapt_SDK.exe - программа, требующаяся для сборки apk (из комплекта Android SDK) - см. Прим.1
 		\Framework_worker.bat - главный скрипт
 	
 	Разное:
@@ -32,7 +34,21 @@
 
 Если всё благополучно, скрипт завершится без ошибок, а итоговое приложение будет сохранено как framework-res_mod.apk
 
-6) Записать framework-res_mod.apk на целевой девайс в /system/framework (предварительно переименовать в framework-res.apk). Перегрузить девайс.
+6) Записать из-под рекавери framework-res_mod.apk на целевой девайс в /system/framework (предварительно переименовать в framework-res.apk). Перегрузить девайс.
 Через adb это делается так:
+	adb reboot recovery
+	смонтировать /system через интерфейс рекавери
 	adb push framework-res_mod.apk /system/framework/framework-res.apk
 	adb reboot
+При записи "на горячую" - adb push framework-res_mod.apk /system/framework/framework-res.apk при включённом и загруженном девайсе - велика вероятность глюков, в т.ч. полное слетание всех контактов, а также регистрации гугл-аккаунта!
+
+ПРИМ. 1
+
+Могут возникнуть ошибки при разборке-сборке apk файлов при использовании вспомогательной программы aapt.exe. В этом случае попробовать программу aapt_SDK.exe (переименовать в aapt.exe)
+
+ПРИМ. 2
+
+используемые бинарные файлы:
+APKTool: http://code.google.com/p/android-apktool/
+7zip: http://www.7-zip.org/download.html
+aapt_SDK: http://developer.android.com/sdk/index.html
