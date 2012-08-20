@@ -1,9 +1,17 @@
 // This script is a part of SystemUI modification kit
 // Script deals with resources and layout XML's
 
-var srcPathStringsBase = "qp\\res\\";
+if (WScript.Arguments.Count() > 0)
+	var QpFolder = WScript.Arguments.Item(0);
+else
+{
+	WScript.Echo("You must specify the folder name with QP files in arguments");
+	WScript.Quit();
+}
+
+var srcPathStringsBase = QpFolder + "\\res\\";
 var dstPathStringsBase = "SystemUI\\res\\";
-var srcPathArrays = "qp\\res\\values\\arrays.xml";
+var srcPathArrays = QpFolder + "\\res\\values\\arrays.xml";
 var dstPathArrays = "SystemUI\\res\\values\\arrays.xml";
 var dstPathStatusBar = "SystemUI\\res\\layout\\status_bar_expanded.xml";
 

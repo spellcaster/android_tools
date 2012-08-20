@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/recent_app_icon_margin_right"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@androidhwext:color/hw_mainmenu_pressed" android:textColor="@color/bright_text_dark_focused" android:gravity="top|center" android:id="@id/icon" android:focusable="true" android:fadingEdge="horizontal" android:clickable="true" android:layout_width="@dimen/recent_app_icon_width" android:layout_height="@dimen/recent_app_icon_height" android:maxLines="2" android:drawablePadding="0.0px" />
-</RelativeLayout>

@@ -50,6 +50,17 @@ if not exist "%CDir%\xml_add.js" (
 	goto :Err
 )
 
+:: Determine qp files folder (use flash or not)
+set /p useflash=Include flashlight button? (y/n) 
+if "%useflash%"=="y" (
+	set QPFolder="qp_flash"
+) else if "%useflash%"=="n" (
+	set QPFolder="qp_noflash"
+) else (
+	echo Wrong answer! Use "y" or "n"
+	goto :Err
+)
+
 set step=1
 set auto=0
 
@@ -66,6 +77,7 @@ if "!auto!"=="0" (
 	echo 5. Build final %APKName%.apk
 	echo 6. Final changes
 	echo 7. Quit
+	set input_step=
 	set /p input_step=Enter step number ^(Enter: step !step!^) 
 	
 	if "!input_step!"=="0" (
@@ -75,7 +87,7 @@ if "!auto!"=="0" (
 	)
 )
 
-goto Step%step%
+goto Step!step!
 
 :: 1. Разобрать SystemUI.apk
 
@@ -91,7 +103,7 @@ FOR %%F IN (%CDir%\framework\*.apk) DO java -jar %CDir%\apktool.jar if %%F
 java -jar %CDir%\apktool.jar d %CDir%\%APKName%.apk %CDir%\%APKName%
 
 if errorlevel 1 goto :Err
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 2. Содержимое папок drawable-hdpi(mdpi, lpdi) и layout из архива добавить в соответствующие
@@ -106,19 +118,19 @@ goto Prompt
 echo ### Step 2. Add custom files and modify values
 
 IF EXIST %CDir%\%APKName%\res\drawable-hdpi (
-	copy /y %CDir%\qp\res\drawable-hdpi\* %CDir%\%APKName%\res\drawable-hdpi
+	copy /y %CDir%\%QPFolder%\res\drawable-hdpi\* %CDir%\%APKName%\res\drawable-hdpi
 )
 IF EXIST %CDir%\%APKName%\res\drawable-mdpi (
-	copy /y %CDir%\qp\res\drawable-mdpi\* %CDir%\%APKName%\res\drawable-mdpi
+	copy /y %CDir%\%QPFolder%\res\drawable-mdpi\* %CDir%\%APKName%\res\drawable-mdpi
 )
 IF EXIST %CDir%\%APKName%\res\drawable-ldpi (
-	copy /y %CDir%\qp\res\drawable-ldpi\* %CDir%\%APKName%\res\drawable-ldpi
+	copy /y %CDir%\%QPFolder%\res\drawable-ldpi\* %CDir%\%APKName%\res\drawable-ldpi
 )
 
-copy /y %CDir%\qp\res\layout\* %CDir%\%APKName%\res\layout
-CScript xml_add.js
+copy /y %CDir%\%QPFolder%\res\layout\* %CDir%\%APKName%\res\layout
+CScript xml_add.js %QPFolder%
 
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 5. Cобрать
@@ -137,7 +149,7 @@ java -jar %CDir%\apktool.jar d %CDir%\%APKName%\dist\%APKName%.apk %CDir%\%APKNa
 if errorlevel 1 goto :Err
 
 echo ** Temp apk decompiled to %CDir%\%APKName%\dist\%APKName%
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 7. Скопировать с заменой файл dist/SystemUI/res/values/public.xml в папку res/values/
@@ -149,10 +161,10 @@ goto Prompt
 echo ### Step 4. Copy public.xml and smali, replace IDs
 
 copy /y %CDir%\%APKName%\dist\%APKName%\res\values\public.xml %CDir%\%APKName%\res\values
-xcopy %CDir%\qp\smali %CDir%\%APKName%\smali /e /i /y
+xcopy %CDir%\%QPFolder%\smali %CDir%\%APKName%\smali /e /i /y
 CScript qpid_repl.js
 
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :: 8. Удалить папки build и dist
@@ -170,7 +182,7 @@ java -jar %CDir%\apktool.jar b -f %CDir%\%APKName%
 if errorlevel 1 goto :Err
 
 echo apk compiled, now you may use files from %CDir%\%APKName%\build in the original %APKName%.apk
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :Step6
@@ -195,7 +207,7 @@ cd %CDir%\%APKName%\build\apk
 %CDir%\7za a -tzip -mx5 %CDir%\%APKName%_mod.apk res\layout\status_bar_expanded.xml
 %CDir%\7za a -tzip -mx5 %CDir%\%APKName%_mod.apk res\layout\qp_*.xml
 
-set /a step=%step%+1
+set /a step=!step!+1
 goto Prompt
 
 :Step7

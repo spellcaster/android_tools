@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-﻿ <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/usage_monitor_titlebar_btn_rest" />
-    <item android:state_pressed="true" android:drawable="@drawable/usage_monitor_titlebar_btn_press" />
-    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/usage_monitor_titlebar_btn_press" />
-    <item android:state_enabled="true" android:drawable="@drawable/usage_monitor_titlebar_btn_rest" />
-    <item android:drawable="@drawable/usage_monitor_titlebar_btn_rest" />
-</selector>

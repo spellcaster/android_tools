@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="qp_airplane_text">Полёт</string>
+    <string name="qp_autosync_text">Авто синхро</string>
+    <string name="qp_bluetooth_text">Bluetooth</string>
+    <string name="qp_brightness_text">Яркость</string>
+    <string name="qp_dc_text">GPRS</string>
+    <string name="qp_flashlight_text">Фонарь</string>
+    <string name="qp_gps_text">GPS</string>
+    <string name="qp_lockscreen_text">Блок</string>
+    <string name="qp_no">Отмена</string>
+    <string name="qp_reboot_dlg_title">Перезагрузка</string>
+    <string name="qp_reboot_download">Прошивка</string>
+    <string name="qp_reboot_now">Обычно</string>
+    <string name="qp_reboot_recovery">Рекавери</string>
+    <string name="qp_reboot_text">Рестарт</string>
+    <string name="qp_rotation_text">Авто поворот</string>
+    <string name="qp_screen_timeout_hr">час</string>
+    <string name="qp_screen_timeout_min">мин</string>
+    <string name="qp_screen_timeout_prefix">Отключение экрана через\u0020</string>
+    <string name="qp_screen_timeout_sec">сек</string>
+    <string name="qp_screen_timeout_text">Откл экрана</string>
+    <string name="qp_shutdown_text">Выкл</string>
+    <string name="qp_silent_text">Без звука</string>
+    <string name="qp_sound_text">Звук</string>
+    <string name="qp_sound_vibration_text">Звук Вибрация</string>
+    <string name="qp_vibration_text">Вибрация</string>
+    <string name="qp_wifi_text">WiFi</string>
+    <string name="qp_yes">OK</string>
+</resources>
