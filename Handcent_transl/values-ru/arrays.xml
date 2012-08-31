@@ -120,7 +120,7 @@
     </string-array>
     <string-array name="sendkey_shortcut_entries">
         <item>Ввод</item>
-        <item>ALT+Ввод</item>
+        <item>Alt+Ввод</item>
         <item>Нет</item>
     </string-array>
     <string-array name="pref_timeout_entries">
@@ -324,7 +324,7 @@
     </string-array>
     <string-array name="pref_filter_status_entries">
         <item>Отключено</item>
-        <item>Блокир. уведормления</item>
+        <item>Блокир. уведомления</item>
         <item>Блокир. и в чёрный список</item>
     </string-array>
     <string-array name="pref_filter_options">
@@ -354,13 +354,13 @@
         <item>Свой</item>
     </string-array>
     <string-array name="notif_icon_desc_entries">
-        <item>Стандартный</item>
-        <item>Зелёный</item>
-        <item>Оранжевый</item>
-        <item>Розовый</item>
-        <item>Фиолетовый</item>
-        <item>Красный</item>
-        <item>Чёрный</item>
+        <item>По умолчанию</item>
+        <item>Зелёная иконка</item>
+        <item>Оранжевая иконка</item>
+        <item>Розовая иконка</item>
+        <item>Фиолетовая иконка</item>
+        <item>Красная иконка</item>
+        <item>Чёрная иконка</item>
         <item>Голубой конверт</item>
         <item>Синий конверт</item>
         <item>Зелёный конверт</item>
@@ -371,29 +371,26 @@
         <item>Красный конверт</item>
         <item>Белый конверт</item>
         <item>Жёлтый конверт</item>
-        <item>Чёрная иконка</item>
-        <item>Рыжая иконка</item>
-        <item>Фиолетовая иконка</item>
-        <item>Розовая иконка</item>
-        <item>Красная иконка</item>
-        <item>Голубая иконка</item>
-        <item>Зелёная иконка</item>
-        <item>Приватное сообщение</item>
-<!-- ?
-        <item>black privacy icon</item>
-        <item>green privacy icon</item>
-        <item>pink privacy icon</item>
-        <item>red privacy icon</item>
-        <item>purple privacy icon</item>
-        <item>blue notify icon</item>
-        <item>black notify icon</item>
-        <item>gray notify icon</item>
-        <item>green notify icon</item>
-        <item>pink notify icon</item>
-        <item>purple notify icon</item>
-        <item>white notify icon</item>
-
- -->        
+        <item>Чёрная реплика</item>
+        <item>Рыжая реплика</item>
+        <item>Фиолетовая реплика</item>
+        <item>Розовая реплика</item>
+        <item>Красная реплика</item>
+        <item>Голубая реплика</item>
+        <item>Зелёная реплика</item>
+        <item>Личное сообщение</item>
+        <item>Чёрное ЛС</item>
+        <item>Зелёное ЛС</item>
+        <item>Розовое ЛС</item>
+        <item>Красное ЛС</item>
+        <item>Фиолетовое ЛС</item>
+        <item>Синее уведомление</item>
+        <item>Чёрное уведомление</item>
+        <item>Серое уведомление</item>
+        <item>Зелёное уведомление</item>
+        <item>Розовое уведомление</item>
+        <item>Фиолетовое уведомление</item>
+        <item>Белое уведомление</item>
     </string-array>
     <string-array name="pref_message_timestamp_adjust_entries">
         <item>По умолчанию</item>
