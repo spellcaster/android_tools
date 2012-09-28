@@ -642,11 +642,11 @@
     <string name="show_as_flatslideshow_summaryoff">Режим просмотра MMS по умолчанию.</string>
     <string name="pref_autoreset_send_counter">Автосброс счётчика исходящих</string>
     <string name="pref_autoreset_send_counter_summary">Периодичность сброса счётчика исходящих.</string>
-    <string name="menu_lock_message">Заблокировать</string>
-    <string name="menu_unlock_message">Разблокировать</string>
-    <string name="confirm_dialog_locked_title">Удалить заблокированное сообщение?</string>
-    <string name="confirm_delete_locked_message">Вы точно хотите удалить это заблокированное сообщение?</string>
-    <string name="delete_unlocked">Удалить заблокированные сообщения</string>
+    <string name="menu_lock_message">Защита от удаления</string>
+    <string name="menu_unlock_message">Снять защиту</string>
+    <string name="confirm_dialog_locked_title">Удалить защищённое сообщение?</string>
+    <string name="confirm_delete_locked_message">Вы точно хотите удалить это защищённое сообщение?</string>
+    <string name="delete_unlocked">Удалить защищённые сообщения</string>
     <string name="pref_mms_max_size">Макс. размер MMS</string>
     <string name="pref_mms_max_size_summary">Задать максимальный размер MMS сообщения.</string>
     <string name="pref_show_threadmessages_counter">Счётчик сообщений</string>
@@ -799,7 +799,7 @@ SD карта не подключена."</string>
     <string name="pref_send_message_settings_title">Отправка сообщений</string>
     <string name="str_donate">Поддержите нас</string>
     <string name="bubble_preview_text">"Как тебе?
- www.handcent.com"</string>
+ www.handcent.com" </string>
    <string name="test_button_title">Тест</string>
     <string name="test_ledcolor_notification_title">Проверка цвета LED</string>
     <string name="test_ledcolor_alert_user_offscreen_summary">Ваш аппарат может включать цветной индикатор только когда экран выключен. Чтобы выполнить предпросмотр, выключите экран.</string>
@@ -1037,7 +1037,7 @@ SD карта не подключена."</string>
     <string name="theme_applied_toast_message">Тема изменена</string>
     <string name="hc_service_list_title">Услуги My handcent</string>
     <string name="hc_service_list_summary">Просмотреть все услуги My Handcent Online</string>
-    <string name="permission_refresh_dialog_message">Пожалуйста, войдите в свой аккаунт Handcent Online или бесплатно зарегистрируйтесь.</string>
+    <string name="permission_refresh_dialog_message">Пожалуйста, войдите в свой аккаунт Handcent Online или бесплатно создайте новый.</string>
     <string name="service_update_dialog_message_nopay">Либо услуга не подключена, либо Вы забыли войти в аккаунт.</string>
     <string name="pref_prevent_resend">Блокир. переотправку</string>
     <string name="pref_prevent_resend_summary">Использовать специальную возможность Handcent, чтобы предотвратить проблему повторной отправки, которая может возникнуть на некоторых телефонах после перезагрузки.</string>
@@ -1230,12 +1230,12 @@ SD карта не подключена."</string>
     <string name="group_existed">Такое имя группы уже существует…</string>
     <string name="group_delete_group_confirm">Хотите удалить группу?</string>
     <string name="group_delete_members_confirm">Хотите удалить членов?</string>
-    <string name="menu_issue_report_and_suggestion">Отчёт об ошибках и пожелания</string>
-    <string name="menu_forceclose_report">Отчёт только о падении</string>
+    <string name="menu_issue_report_and_suggestion">Отчёты об ошибках, пожелания</string>
+    <string name="menu_forceclose_report">Отчёт о падении</string>
     <string name="menu_forceclose_and_wait">Отчёт о падении и зависании</string>
     <string name="menu_report_other_issue">Отчёт о других проблемах</string>
     <string name="menu_suggestion">Пожелания и запросы</string>
-    <string name="report_forceclose_tip">Отправляет отчёт о падении программы  в Handcent по email. Вы можете добавить дополнительную информацию или просто нажать Отправить. Мы свяжемся с вами по email.</string>
+    <string name="report_forceclose_tip">Отправляет отчёт о падении программы в Handcent по email. Вы можете добавить дополнительную информацию или просто нажать Отправить. Мы свяжемся с вами по email.</string>
     <string name="report_forceclose_and_wait_tip">Отправляет файл отчёта о падении или зависании программы в Handcent по email. Вы можете добавить дополнительную информацию или просто нажать Отправить. Мы свяжемся с вами по email. Требуется наличие рута на телефоне.</string>
     <string name="report_report_other_issue_tip">Сообщить о другой проблеме при использовании Handcent по email. Пожалуйста, введите описание проблемы и нажмите Отправить.</string>
     <string name="suggestion_tip">Отослать предложения или запросы о фичах в Handcent по email. Пожалуйста, введите текст и нажмите Отправить, мы свяжемся с вами по email.</string>
@@ -1251,17 +1251,17 @@ SD карта не подключена."</string>
     <string name="schedule_time_invalid_message">Время задания неверно, задайте правильное.</string>
     <string name="schedule_auto_delete_invalid_task_title">Автоудаление</string>
     <string name="schedule_auto_delete_invalid_task_summary">Автоматическое удаление истекших или неправильных заданий.</string>
-    <string name="pref_default_message">Приложение для сообщений</string>
+    <string name="pref_default_message">Мессенджер по умолчанию</string>
     <string name="pref_default_message_summary">Установить Handcent приложением по умолчанию для сообщений и полностью отключить стандартные и любые другие SMS/MMS приложения.</string>
     <string name="pref_default_message_warnning">Включение этой опции полностью отключит стандартные и любые другие SMS/MMS приложения, гарантируя, что Handcent SMS станет приложением по умолчанию для сообщений в вашем телефоне. Действие можно отменить в любое время.</string>
-    <string name="hcmms_auto_download_title">Auto Download</string>
-    <string name="hcmms_auto_download_summary">Automatically download \"Handcent MMS+\" files. Depending on usage this may greatly impact your alotted Data Plan so it is not recommended for light, fixed data plans.</string>
-    <string name="uploading_title">Uploading</string>
-    <string name="send_mms_from_hc_message">You have chosen a high quality file. Do you wish to send it using the Handcent network instead?</string>
+    <string name="hcmms_auto_download_title">Авто скачивание</string>
+    <string name="hcmms_auto_download_summary">Автоматически скачивать файлы \"Handcent MMS+\". В зависимости от ситуации может потреблять много трафика, не рекомендуется для тарифов с ограниченным трафиком.</string>
+    <string name="uploading_title">Загрузка</string>
+    <string name="send_mms_from_hc_message">Вы выбрали файл большого объёма. Хотите отправить его через Сеть Handcent?</string>
     <string name="dont_show_again_title">Всегда использовать этот ответ.</string>
     <string name="hcmms_auto_convert_title">Автоконвертация</string>
     <string name="hcmms_auto_convert_summary">Автоматически конвертировать высококачественные изображения, аудиозаписи и видео в \"Handcent MMS+\" и отправлять их через Сеть Handcent.</string>
-    <string name="inconv_max_number_reached_message">You have reached the maximum number of records. Please manage your files (Settings->Handcent services->Handcent MMS+) and try again or upgrade to one of our applicable premium services.</string>
+    <string name="inconv_max_number_reached_message">Вы достигли максимума хранимых файлов. Пожалуйста, удалите часть старых файлов (Настройки -> Услуги Handcent -> Handcent MMS+) и попробуйте снова, либо приобретите один из расширенных сервисов.</string>
     <string name="select_file_title">Выбрать файл</string>
     <string name="menu_add_to_schedule_task">Добавить в планировщик</string>
     <string name="pref_led_plus_title">LED+</string>
@@ -1269,7 +1269,7 @@ SD карта не подключена."</string>
     <string name="pref_led_plus_tip">Пожалуйста, убедитесь, что ваш аппарат имеет рут, и Handcent SMS разрешён рут-доступ в диалоге запроса приложения Super User. Вы можете удалить разрешение из приложения Super User в любой момент.</string>
     <string name="pref_batch_sms_plugin_title">GroupSMS</string>
     <string name="pref_batch_sms_plugin_summary">"The Handcent Group SMS plugin will allow you to send Group SMS messages to more people by circumventing your Android device's integrated limitation of 100 SMS messages per hour. Furthermore, those subscribing to Handcent VIP and GOLD memberships will enjoy greater functionality of the Group SMS plugin!"</string>
-    <string name="pref_batch_sms_plugin_status" formatted="false">Currently installed Group SMS plugin:%s,actived plugins:%s,you may send max %s SMS every hour</string>
+    <string name="pref_batch_sms_plugin_status" formatted="false">Currently installed Group SMS plugin:%s, actived plugins:%s, you may send max %s SMS every hour</string>
     <string name="pref_lite_mode_sent_message_counter">Стиль счётчика сообщений</string>
     <string name="str_stop_send">Стоп</string>
     <string name="pref_install_plugin">Установить плагин</string>
@@ -1303,11 +1303,11 @@ SD карта не подключена."</string>
     <string name="schedule_enable_run_notification_title">Уведомления о запуске</string>
     <string name="schedule_enable_run_notification_summary">При запуске задания планировщика  показывать уведомление.</string>
     <string name="my_gallery_stat_message">You have %s picture(s).</string>
-    <string name="add_to_my_gallery_title">Add to My gallery</string>
-    <string name="add_to_my_gallery_toast_message">Added to My gallery successful!</string>
-    <string name="toast_picture_downloaded">The picture has been downloaded,save to %s!</string>
+    <string name="add_to_my_gallery_title">Добавить в Мою Галерею</string>
+    <string name="add_to_my_gallery_toast_message">Добавлено в Мою Галерею!</string>
+    <string name="toast_picture_downloaded">The picture has been downloaded, save to %s!</string>
     <string name="pictures_submit_message">Your picture has been successfully submitted to the Handcent team. We will review your picture and it will be released and available in Handcent Greeting upon approval!</string>
-    <string name="space_full_message">Your space is full!If you want to get more spaces,please click Upgrade!</string>
+    <string name="space_full_message">Свободное место закончилось! Нажмите Upgrade, чтобы получить больше свободного места!</string>
     <string name="file_format_error_message">Поддерживается закачивание только форматов GIF/JPG/JPEG/PNG.</string>
     <string name="upload_button_title">Закачать</string>
     <string name="by_prefix_title">By</string>
@@ -1471,7 +1471,7 @@ If you do not have an account, it is free to register anytime!"</string>
     <string name="pkey_group_messaging_title">Групповые сообщения</string>
     <string name="pref_thread_group_conversations">Групповые сообщения</string>
     <string name="pref_thread_group_conversations_summary">Использовать MMS для групповых сообщений (сперва необходимо установить Handcent мессенджером по умолчанию).</string>
-    <string name="menu_messaging_back">Messaging %s</string>
+    <string name="menu_messaging_back">Сообщение %s</string>
     <string name="pref_enable_numbers">Показывать номера</string>
     <string name="pref_disable_numbers">Спрятать номера</string>
     <string name="confirm_enable_numbers_title">Показывать номера телефонов в заголовках бесед?</string>
@@ -1502,8 +1502,8 @@ If you do not have an account, it is free to register anytime!"</string>
     <string name="send_screenshot_confirm">Отправить снимок экрана текущему контакту или другим людям?</string>
     <string name="send_screenshot_btn_current">Текущему</string>
     <string name="send_screenshot_btn_others">Другим</string>
-    <string name="hc_popup_title">Handcent Popup</string>
-    <string name="insertTemp">Templates</string>
+    <string name="hc_popup_title">Окно Handcent</string>
+    <string name="insertTemp">Шаблоны</string>
     <string name="usestorage">Галерея</string>
     <string name="stamptool">Stamp</string>
     <string name="savechanges">Сохранить изменения?</string>
@@ -1526,7 +1526,7 @@ If you do not have an account, it is free to register anytime!"</string>
     <string name="pref_notify_mms_after_download_title">Уведомлять после загрузки</string>
     <string name="pref_notify_mms_after_download_summary">Уведомлять и показывать всплывающее окно только после того, как MMS будет загружено (только когда Handcent установлен мессенджером по умолчанию).</string>
     <string name="global_release_note">"Release Notes of Handcent 4.4.3 \\n\\nFix \"Delete thread\" issue at Motorola phone\\n\\nFix background blur issue\\n\\nNew HelloKitty,cute\\n\\nImprove scroll speed at main windows\\n\\nFull support android 4.1 (Jelly Bean) and support new notification style of 4.1 that preview MMS picture directly at notification bar and so on\\n\\n Add \"Notify after downloaded\" option,better MMS receive experiment,you can preview picture at pop up directly,useful for Emoji MMS,Needn't click \"View MMS\" anymore\\n\\n Improve MetroPCS and Boost Mobile MMS support\\n\\n Contact sugggestion list support display contact picture now\\n\\nImprove battery usage\\n\\nFix known issue\\Updated Korean translation"</string>
-    <string name="warnning_mms_after_download">Please enable default messaging application option from application settings and Auto retrieve MMS option from receive message settings first</string>
+    <string name="warnning_mms_after_download">Пожалуйста, включите опции Настройки -> Мессенджер по умолчанию и Доставка сообщений -> Доставка MMS -> Автополучение</string>
     <string name="pref_android40_social_network">This feature will show facebook and other social network contacts at handcent,enable the feature need your phone being rooted and allow 3rd applicatoin read your social network contacts information. You can disable the permssion by uncheck the option anytime later</string>
     <string name="pref_android40_social_enabler_title">Social network enabler</string>
     <string name="pref_android40_social_enabler_summary">Enable social network contact display for rooted Android 4.0 phones.</string>
