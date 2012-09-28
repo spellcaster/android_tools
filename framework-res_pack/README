@@ -49,6 +49,6 @@
 ПРИМ. 2
 
 используемые бинарные файлы:
-APKTool: http://code.google.com/p/android-apktool/
-7zip: http://www.7-zip.org/download.html
-aapt_SDK: http://developer.android.com/sdk/index.html
+apktool.jar, aapt.exe: http://code.google.com/p/android-apktool/
+7za.exe: http://www.7-zip.org/download.html
+aapt_SDK.exe: http://developer.android.com/sdk/index.html (взято из Android SDK)
