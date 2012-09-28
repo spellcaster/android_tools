@@ -1,5 +1,6 @@
 #!/system/bin/sh
 
+su
 mkdir /mnt/cust1
 busybox mount -o loop,rw /.cust_backup/image/cust.img /mnt/cust1
 rm /mnt/cust1/channel/ru/app/yandexmaps.apk
