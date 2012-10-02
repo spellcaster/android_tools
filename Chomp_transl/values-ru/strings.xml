@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--
+    This is the language file for locale: ru
+
+    Please translate *only* the strings between ">" and "<". For example:
+        <string name="DO NOT TRANSLATE">TRANSLATE</string>
+    
+    Edit this file using an editor that supports UTF-8, such as Notepad on Windows or
+    TextEdit on Mac OS X. See http://www.alanwood.net/unicode/utilities_editors.html for more
+    editors.
+
+    Sequences such as %1$d and %2$s etc are placeholders for values added to
+    the message at run time (such as numbers or error messages).
+    These sequences should appear in the translated strings, although
+    they can be put in a different order if necessary.
+
+    The sequence \n indicates a line break, and should not be changed or removed during
+    translation.
+
+    The sequences &lt; and &gt; should also not be changed during translation.
+    -->
+
+    <string name="app_name">chompSMS</string>
+
+    <!--
+    Conversation List screen
+    -->
+    <string name="conversations">Переписки</string>
+    <string name="no_recipients">Нет получателей</string>
+    <string name="draft">черновик</string>
+    <string name="new_message">Новое сообщение</string>
+    <string name="yesterday">Вчера</string>
+
+    <!--
+    Conversation List screen - Options menu
+    -->
+    <string name="compose">Написать</string>
+    <string name="delete_all">Удалить все</string>
+    <string name="settings">Настройки</string>
+    <string name="all_conversations_will_be_deleted">Все переписки будут удалены.</string>
+    <string name="compose_new_message">Написать новое сообщение</string>
+    <string name="mark_all_as_read">Все как прочитанные</string>
+    <string name="speak_unread">Сказать непрочитанные</string>
+    <string name="unread_message_speech">Сообщение от %1$s получено %2$s: %3$s</string>
+    <string name="mms_message">MMS сообщение</string>
+    <string name="messages_all_marked_as_read">Все сообщения помечены как прочитанные.</string>
+
+    <!--
+    Conversation List screen - Context menu
+    -->
+    <string name="call">Позвонить %1s</string>
+    <string name="call_button_text">Звонок</string>
+    <string name="add_to_contacts">Добавить в контакты</string>
+    <string name="add_as_textfreek_friend">Добавить как TextFreek контакт</string>
+    <string name="delete_conversation">Удалить переписку</string>
+    <string name="contact_details">Детали контакта</string>
+    <string name="blacklist">В чёрный список</string>
+    <string name="unblacklist">Из чёрного списка</string>
+    <string name="reset_to_defaults">Сбросить (По умолчанию)</string>
+    <string name="email_conversation">Отпр. переписку по Email</string>
+    <string name="edit_schedule">Изменить расписание</string>
+
+    <!--
+    Email/File Transfer - Progress Dialog
+    -->
+    <string name="querying_conversation">Запрос переписки…</string>
+    <string name="creating_attachment">Создание вложения…</string>
+    <string name="me">Я</string>
+    <string name="you_need_the_sdcard_plugged_in_to_perform_this_action">Необходимо подключить SD-карту, чтобы выполнить это действие.</string>
+    <string name="failed_to_email_conversation">Ошибка создания email из переписки — возможно, недостаточно места на SD-карте.</string>
+    <string name="see_attached_file">Посмотри переписку с %1$s в прикреплённом ZIP-файле.\n\nОт команды chompSMS!</string>
+    <string name="chompsms_conversation">Переписка chompSMS</string>
+
+    <!--
+    Welcome
+    -->
+    <string name="upgrade_notice_title">Пожалуйста, помните</string>
+    <string name="new_install_notice_message">Добро пожаловать в chompSMS!\n\nПожалуйста, помните, что chompSMS имеет собственную систему уведомлений, поэтому вам необходимо отключить уведомления во встроенном SMS-клиенте.</string>
+    <string name="chompsms_welcome">Добро пожаловать в chompSMS!\n\nПожалуйста, помните, что chompSMS имеет собственную систему уведомлений, поэтому вам необходимо отключить уведомления во встроенном SMS-клиенте.</string>
+
+    <!--
+    Conversation List screen - Blacklist dialog
+    -->
+    <string name="blacklist_warning">Добавить %1$s в чёрный список?
+&lt;br/&gt;&lt;br/&gt;Более подробно о чёрном списке см. в окне Настройки.</string>
+    
+    <!--
+    Conversation screen
+    -->
+    <string name="hidden_sender_address">Скрытый отправитель</string>
+    <string name="conversation">Переписка</string>
+    <string name="send">Отпр.</string>
+    <string name="to">Кому:</string>
+    <string name="subject">Тема:</string>
+    <string name="failed_to_send_sms_message">Ошибка отправки сообщения
+(проверьте ваше Internet-соединение)</string>
+    <string name="the_entire_conversation_will_be_deleted">Вся переписка будет удалена.</string>
+    <string name="credits_left">%1$d кредитов осталось</string>
+    <string name="mms_not_downloaded">MMS контент для этого сообщения ещё не загружен (убедитесь, что настройка Автополучения в стандартном приложении сообщений активна).</string>
+    <string name="inline_subject">&lt;b&gt;Тема:&lt;/b&gt; %s</string>
+    <string name="anonymous_recipient">Аноним</string>
+    <string name="drm_protected_text">"* Текст, защищенный DRM *"</string>
+    <string name="insufficient_drm_rights">Обнаружена нехватка DRM прав.</string>
+    <string name="unable_to_read_message">chompSMS не может отобразить это сообщение.</string>
+    <string name="load_earlier_messages">Загрузить более ранние</string>
+    <string name="image_too_large">Изображение слишком большое</string>
+    <string name="compressing">Изображение слишком большое. Сжимается…</string>
+    <string name="forward_prefix">Fwd:</string>
+    <string name="cannot_save_message">Не могу сохранить сообщение</string>
+    <string name="message_size_label">Размер сообщения: </string>
+    <string name="kilobyte">Kб</string>
+    <string name="download">Загрузка</string>
+    <string name="downloading">Загружается…</string>
+    <string name="empty_mms_notification">&lt;MMS&gt;</string>
+    <string name="messages_sent_via_textfreek">%1$d TextFreek отправлено</string>
+    <string name="group_message">Групповое сообщение</string>
+
+    <!--
+    Conversation screen - StartTalking integration
+    -->
+    <string name="voice_text">Текст голосом</string>
+    <string name="do_you_wish_to_install_starttalking">Вы уверены, что хотите установить StartTalking?</string>
+
+    <!--
+    Quick Reply - Dialog
+    -->
+    <string name="close">Закр</string>
+    <string name="popup_open">Откр</string>
+    <string name="popup_call">Звонок</string>
+    <string name="mark_as_read">Как прочитанное</string>
+    <string name="mark_as_unread">Как непрочитанное</string>
+    <string name="reply">Ответ</string>
+    <string name="show">См.</string>
+    <string name="later">Позже</string>
+    <string name="phone_call">Звнк</string>
+    <string name="would_you_like_to_call">Вы хотите позвонить %1$s?</string>
+    <string name="open">Откр</string>
+    <string name="speak_all_unread">Сказать все непрочитанные</string>
+    <string name="smiley">Смайл</string>
+    <string name="templates_short">Шабл</string> <!-- Shortened version for Quick Reply -->
+    <string name="forward_short">Пересл</string> <!-- Shortened version for Quick Reply -->
+    <string name="delete_short">Удал</string> <!-- Shortened version for Quick Reply -->
+
+    <!--
+    Conversation screen - View Message Details dialog
+    -->
+    <string name="message_details_title">Подробности сообщения</string>
+    <string name="from_message_line">От: %1$s</string>
+    <string name="to_message_line">Кому: %1$s</string>
+    <string name="sent_message_line">Отправлено: %1$s</string>
+    <string name="received_message_line">Получено: %1$s</string>
+    <string name="you_must_enter_at_least_one_valid_phone_number">Вы должны ввести верный номер телефона.</string>
+    <string name="your_message_will_be_discarded_because_it_has_no_valid_recipients">Ваше сообщение не имеет верных адресатов и будет отменено.</string>
+    <string name="could_not_send_message_at_this_time_please_try_again">Не могу отправить сообщение сейчас. Пожалуйста, попробуйте позже.</string>
+    <string name="no_subject">(без темы)</string>
+    <string name="type_header">Tип: %1$s</string>
+    <string name="mms_notification">MMS уведомление</string>
+    <string name="sms_message">SMS сообщение</string>
+    <string name="subject_header">Тема: %1$s</string>
+    <string name="convert_to_mms">Конвертировать в MMS</string>
+    <string name="convert_to_sms">Конвертировать в SMS</string>
+    <string name="delivery_status">Статус доставки</string>
+    <string name="delivery_status_pending">Ожидается</string>
+    <string name="delivery_status_failed">Неудачно</string>
+    <string name="delivery_status_received">Получено</string>
+    <string name="message_size_label2">Размер сообщения</string>
+    <string name="cannot_get_details">Не могу получить детали</string>
+    <string name="message_type_label">Тип</string>
+    <string name="text_message">SMS сообщение</string>
+    <string name="multimedia_message">MMS сообщение</string>
+    <string name="multimedia_notification">MMS уведомление</string>
+    <string name="from_label">От</string>
+    <string name="to_address_label">Кому</string>
+    <string name="bcc_label">Bcc</string>
+    <string name="sent_label">Послано </string>
+    <string name="received_label">Получено</string>
+    <string name="saved_label">Сохранено</string>
+    <string name="subject_label">Тема</string>
+    <string name="priority_label">Приоритет</string>
+    <string name="priority_high">Высокий</string>
+    <string name="priority_normal">Нормальный</string>
+    <string name="priority_low">Низкий</string>
+    <string name="message_class_label">Класс сообщения:</string>
+    <string name="expire_on">Истекает</string>
+    <string name="scheduled_text_message">Запланированные СМС</string>
+    <string name="scheduled_for">Запланированные для</string>
+
+    <!--
+    Conversation screen - Retry dialog
+    -->
+    <string name="retry_summary">Похоже, это сообщение не было отправлено. Попробовать отправить ещё раз?</string>
+    <string name="retry_summary_with_error">Сообщение не было отправлено из-за \'%1$s\', хотите повторить попытку?</string>
+    <string name="retry">Повторить</string>
+    <string name="failure">Отказ</string>
+    <string name="ignore">Игнорировать</string>
+
+    <!--
+    Sending MMS
+    -->
+    <string name="the_chompsms_network_only_supports_sms_at_present">В настоящее время сеть chompSMS поддерживает только SMS.\n\nОтправить это MMS через мобильного оператора?</string>
+
+    <!--
+    Conversation screen - Context menu
+    -->
+    <string name="resend">Отправить повторно</string>
+    <string name="forward">Переслать</string>
+    <string name="copy_message_text">Скопировать текст</string>
+    <string name="view_message_details_menu_item">Подробности сообщения</string>
+    <string name="delete_message">Удалить</string>
+    <string name="this_message_will_be_deleted">Это сообщение будет удалено.</string>
+    <string name="are_you_sure_you_want_to_delete_this_locked_message">Вы уверены, что хотите удалить это защищённое сообщение?</string>
+    <string name="include_locked_messages">Включая защищённые сообщения.</string>
+    <string name="view_mms">Показать MMS</string>
+    <string name="view_picture">Показать изображение</string>
+    <string name="play_video">Играть видео</string>
+    <string name="play_audio">Играть аудио</string>
+    <string name="view_slideshow">Показать слайдшоу</string>
+    <string name="save_to_sdcard">Сохранить вложение на SD карту</string>
+    <string name="view_failure">Просмотр ошибки</string>
+    <string name="speak_text">Сказать текст</string>
+    <string name="menu_attach">Вложение</string>
+    <string name="select_audio">Выбрать аудио</string>
+    <string name="lock_message">Защита от удаления</string>
+    <string name="unlock_message">Снять защиту</string>
+    <string name="add_template">Добавить шаблон</string>
+
+    <!-- Conversation screen - errors -->
+    <string name="unsupported_media_format">Не поддерживается %1$s такого формата</string>
+    <string name="select_different_media">Пожалуйста, выберите другое %1$s.</string>
+    <string name="exceed_message_size_limitation">Превышен размер сообщения.</string>
+    <string name="message_too_big_for_video">Сообщение слишком велико для добавления видео.</string>
+    <string name="failed_to_add_media">Извините, вы не можете добавить %1$s в сообщение.</string>
+    <string name="failed_to_resize_image">Изображение не уменьшено.</string>
+    <string name="resize_image_error_information">К сожалению, даже уменьшенное изображение слишком велико для отправки.</string>
+    <string name="image">изображение</string>
+    <string name="video">видео</string>
+    <string name="type_audio">аудио</string>
+
+    <!-- Conversation screen - Options menu -->
+    <string name="delete">Удалить</string>
+    <string name="add_subject">Добавить тему</string>
+    <string name="attach">Вложение</string>
+    <string name="insert_template">Вставить шаблон</string>
+    <string name="insert_contact">Вставить контакт</string>
+
+    <!-- Conversation screen - smilies -->
+    <string name="happy">Happy</string>
+    <string name="sad">Sad</string>
+    <string name="winking">Winking</string>
+    <string name="tongue_sticking_out">Tongue sticking out</string>
+    <string name="surprised">Surprised</string>
+    <string name="kissing">Kissing</string>
+    <string name="yelling">Yelling</string>
+    <string name="cool">Cool</string>
+    <string name="money_mouth">Money mouth</string>
+    <string name="foot_in_mouth">Foot in mouth</string>
+    <string name="embarrassed">Embarrassed</string>
+    <string name="angel">Angel</string>
+    <string name="undecided">Undecided</string>
+    <string name="crying">Crying</string>
+    <string name="lips_are_sealed">Lips are sealed</string>
+    <string name="laughing">Laughing</string>
+    <string name="confused">Confused</string>
+
+    <!-- Conversation screen - attachments dialog -->
+    <string name="pictures">Рисунки</string>
+    <string name="capture_picture">Снять фото</string>
+    <string name="videos">Видео</string>
+    <string name="capture_video">Снять видео</string>
+    <string name="audio">Звук</string>
+    <string name="record_audio">Записать звук</string>
+
+    <!--
+    Conversation screen - Templates dialog
+    -->
+    <string name="templates">Шаблоны</string>
+    <string name="add">Добавить</string>
+    <string name="you_have_no_templates_refer_to_settings">У вас нет шаблонов. Пожалуйста, перейдите на страницу настроек, чтобы узнать, как добавить шаблоны.</string>
+
+    <!--
+    Settings screen
+    -->
+    <string name="buy_a_license">Купить лицензию</string>
+    <string name="google_checkout">Google Checkout</string>
+    <string name="but_ive_already_donated_via_paypal">Но я уже поддержал через PayPal</string>
+    <string name="billing_not_supported">Извините, Ваш телефон не поддерживает покупки внутри приложения. Хотите поддержать нас, используя PayPal?</string>
+    <string name="chomp_advert">Не нужна реклама? Нажмите, чтобы поддержать нас!</string>
+    <string name="about">О программе</string>
+    <string name="mobile_carrier_network">Сеть оператора</string>
+    <string name="sms_network">Сеть SMS</string>
+    <string name="mms_network">Сеть MMS</string>
+    <string name="notifications">Уведомления</string>
+    <string name="cheaper_sms_messages">Дешёвые SMS сообщения</string>
+    <string name="customize_look">Внешний вид</string>
+    <string name="quick_reply_and_compose">Быстрый ответ и Написание</string>
+    <string name="more_stuff">Другие настройки…</string>
+    <string name="delayed_sending">Пауза перед отправкой</string>
+    <string name="security_and_blacklisting">Безопасность, Чёрный список</string>
+
+    <!--
+     Settings screen - About section
+    -->
+    <string name="license_expiry">Лицензия истекла</string>
+    <string name="email_support">Поддержка по Email</string>
+    <string name="change_log">Изменения</string>
+    <string name="features_help">Помощь</string>
+    <string name="textfreek_terms_of_service">Условия использования TextFreek</string>
+    <string name="website">Сайт</string>
+    <string name="message_stats">Статистика сообщений</string>
+    <string name="counts">Счётчики</string>
+    <string name="version">Версия</string>
+    <string name="contacts">Контакты</string>
+    <string name="sms_messages">SMS сообщений</string>
+    <string name="mms_messages">MMS сообщений</string>
+    <string name="total_messages">Всего сообщений</string>
+
+    <!--
+     Settings screen - Widget
+    -->
+    <!-- Don't change [image], it is used as a placeholder for an image  -->
+    <string name="widgets_title">Настройки, Информация, Виджеты</string>
+    <string name="widgets_summary">"Теперь у нас имеется 2 замечательных виджета, которые можно легко добавить на рабочие столы.&lt;br&gt;&lt;br&gt;
+Для использования виджетов chompSMS просто перейдите на домашний экран, нажмите кнопку &lt;b&gt;Menu&lt;/b&gt;, &lt;b&gt;Добавить&lt;/b&gt;, &lt;b&gt;Виджеты&lt;/b&gt;, затем выберите  &lt;b&gt;chompSMS - Иконка&lt;/b&gt; или &lt;b&gt;chompSMS - Большой&lt;/b&gt;.&lt;br&gt;&lt;br&gt;
+Вот как выглядит виджет &lt;b&gt;chompSMS - Иконка&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+[image]
+&lt;br&gt;&lt;br&gt;
+Он может заменить иконку chompSMS и использоваться для отображения количества непрочитанных сообщений.&lt;br&gt;&lt;br&gt;
+А вот как выглядит виджет &lt;b&gt;chompSMS - Большой&lt;/b&gt;, замечательный виджет 4х2!&lt;br&gt;&lt;br&gt;
+[image]
+&lt;br&gt;&lt;br&gt;
+Он позволяет прочитать новые сообщения прямо с домашнего экрана в любое удобное время.&lt;br&gt;&lt;br&gt;"</string>
+    <string name="about_widget_popup_text">Поскольку вы только что обновились, мы хотим расказать вам о &lt;b&gt;Новом&lt;/b&gt; виджете chompSMS.</string>
+
+    <!--
+    Settings screen - SMS Network
+    -->
+    <string name="chompSMS">chompSMS</string>
+    <string name="via_chompsms">через chompSMS</string>
+    <string name="via_textfreek_title">через TextFreek</string>
+    <string name="mobile_carrier">Мобильный оператор</string>
+    <string name="via_carrier">через оператора</string>
+    <string name="chompsms_summary">Отправлять сообщения через сеть chompSMS (сначала купите chompSMS кредиты).</string>
+    <string name="license_one_time">Лицензия покупается один раз и включает в себя все последующие обновления chompSMS.</string>
+    <string name="mobile_carrier_summary2">Отправлять SMS через мобильную сеть оператора (никакой дополнительной оплаты).</string>
+    <string name="quick_switch_title">Быстрое переключение</string>
+    <string name="quick_switch_summary_with_textfreek">Позволяет Вам быстро переключаться между отправкой через оператора, chompSMS и TextFreek долгим нажатием на кнопку \'Отправить\'.</string>
+    <string name="quick_switch_summary">Позволяет Вам быстро переключиться между <b>Отправить через мобильного оператора</b> и <b>Отправить через chompSMS</b> по долгому нажатию кнопки \'Отправить\'.</string>
+    <string name="i_am_on_usa_t_mobile_title">У меня USA T-Mobile</string>
+    <string name="i_am_on_usa_t_mobile_summary">Выберите, если ваш оператор T-Mobile в США. Иначе сообщения, требующие специального кодирования, могут быть не доставлены.</string>
+    <string name="cdma_split_title">CDMA разбивка</string>
+    <string name="cdma_split_summary">Если у вас CDMA сеть, то длина сообщения ограничена. Выберите эту опцию для автоматической разбивки сообщения.</string>
+    <string name="sms_delivery_reports_title">Отчёт о доставке SMS</string>
+    <string name="sms_delivery_reports_summary2">Запрашивать отчёт о доставке для всех отправляемых SMS.</string>
+    <string name="messages_sent">Сообщений отправлено</string>
+    <string name="no_messages_sent">Нет отправленных сообщ.</string>
+    <string name="messages_sent_via_carrier">%1$d сообщений отправлено</string>
+    <string name="message_sent_via_carrier">1 сообщение отправлено</string>
+    <string name="sms_network_settings">Настройки сети SMS</string>
+    <string name="textfreek_button_summary">Отправляйте сообщения через TextFreek БЕСПЛАТНО! Для информации перейдите в Настройки, TextFreek.</string>
+    <string name="reset_counter">Сбросить счётчик</string>
+    <string name="default_send_method_title">Метод отправки по умолчанию</string>
+    <string name="send_method_summary">Метод по умолчанию запоминается для каждого контакта отдельно (долгий тап по кнопке Отправить, чтобы изменить). Здесь можно установить общий метод по умолчанию.</string>
+    <string name="mobile_carrier_counter">Счётчик оператора</string>
+    <string name="show_counter_summary">Если отмечено, в поле набора сообщения отображается счётчик SMS, отправленных через мобильного оператора.</string>
+
+    <!--
+    Settings screen - MMS Networks
+    -->
+    <string name="mms_network_settings">Настройки сети MMS</string>
+    <string name="auto_retrieve_title">Автозагрузка</string>
+    <string name="auto_retrieve_summary2">"Если выбрано, будет выполняться автозагрузка контента MMS.\n\n<b>В этом случае вы должны отключить эту функцию во встроенном SMS приложении Android</b>.</string>
+    <string name="mms_message_size_limit_title">Лимит размера MMS</string>
+    <string name="mms_message_size_limit_summary">Только некоторые операторы допускают сообщения свыше 300 Кб. Если вы укажете большее значение, возможно, оператор не пропустит ваше сообщение.</string>
+    <string name="no_limit">Неограничено</string>
+    <string name="mms_delivery_reports_title">Отчёт о доставке MMS</string>
+    <string name="mms_delivery_reports_summary2">Запрашивать отчёт о доставке для всех отправляемых MMS.</string>
+    <string name="on">Включено</string>
+    <string name="off">Отключено</string>
+    <string name="preserve_image_size_title">Сохранять разрешение</string>
+    <string name="preserve_image_size_summary">Обычно мы изменяем размер изображения до 640 x 480 в целях совместимости. Если выбрана эта опция, мы пытаемся сохранить оригинальный размер в пределах \"Лимита размера\".</string>
+
+    <!--
+    Settings screen - Credits
+    -->
+    <string name="buy_credits">Купить кредиты</string>
+    <string name="buy_chompsms_credits">Купить кредиты chompSMS</string>
+    <string name="cheaper_sms_messages_helper_text">Кредиты chompSMS можно использовать для отправки SMS через нашу сеть вместо вашего мобильного оператора.\n\nОтличная возможность сэкономить, если наши расценки ниже, чем тарифы оператора. К примеру, при отправке сообщений в роуминге.</string>
+    <string name="restore_lost_credits">Восстановить потерянные кредиты</string>
+    <string name="restore_credits">Восстановление кредитов</string>
+    <string name="restore">Восстановление</string>
+    <string name="mobile_number">Номер мобильного</string>
+    <string name="restoring_your_credits">Восстановление ваших кредитов…</string>
+    <string name="you_now_have_credits">Сейчас у вас %1$d кредитов</string>
+    <string name="credits_for_number">%d кредитов</string>
+    <string name="set_to">Установить в %1$s</string>
+    <string name="enter_your_mobile_number">Введите ваш номер телефона:</string>
+    <string name="cannot_send_no_credits">Вы не можете отправлять сообщения через сеть chompSMS, поскольку у вас нет кредитов. Удерживайте палец на кнопке Отправить, чтобы вернуться обратно к сети вашего оператора (синяя кнопка).</string>
+    <string name="buy_credits_summary">Для отправки SMS через сеть chompSMS необходимо купить кредиты. 1 кредит = 1 SMS.\n\n<b>Прим.</b>: покупка кредитов также означает отсутствие рекламы!</string>
+    <string name="unable_to_lookup_credits">Ошибка проверки кредитов, проверьте ваше internet-подключение и попробуйте снова.</string>
+    <!-- %1$d is the number of credits, %2$s is the mobile number and %3$s is the country name -->
+    <string name="successfully_purchased_credits">Вы приобрели &lt;b&gt;%1$d&lt;/b&gt; SMS кредитов. Эти кредиты будут предоставлены для мобильного телефона &lt;b&gt;%2$s&lt;/b&gt; в стране &lt;b&gt;%3$s&lt;/b&gt; в течение нескольких минут.</string>
+    <string name="whats_next">Что дальше?</string>
+    <string name="sorry">Извините</string>
+    <string name="failed_to_purchase_credits">Возникла проблема при покупке кредитов. Пожалуйста, сообщите об этом по адресу help@chompsms.com (начните заголовок письма с &lt;b&gt;NOT FAQ&lt;/b&gt;) и предоставьте ваш &lt;b&gt;Google Checkout Order ID&lt;/b&gt; и ваш &lt;b&gt;номер мобильного телефона&lt;/b&gt;.</string>
+    <string name="purchasing">Оплата…</string>
+    <string name="you_need_to_specify_a_phone_number">Вы должны указать номер телефона, на который будут предоставляться кредиты.</string>
+    <string name="the_phone_number_can_be_at_most_12_digits">Номер телефона, исключая код страны, может быть не более 12 символов.</string>
+    <string name="us_phone_numbers_10_digits_or_more">Для США номер телефона должен быть не менее 10 символов, добавьте код вашего региона, но <b>не</b> добавляйте код страны \'1\'.</string>
+    <string name="restore_failed">Ошибка восстановления</string>
+    <string name="please_tap_to_select_which_credit_bundle_you_wish_to_purchase">Пожалуйста, тапните на пакете кредитов, который вы хотите приобрести.</string>
+    <string name="please_enter_your_mobile_number">Пожалуйста, введите свой номер мобильного.</string>
+    <string name="none_entered">Ничего не введено</string>
+    <string name="your_credits">Ваши кредиты</string>
+
+    <!--
+    Settings screen - Customize Look
+    -->
+    <string name="customize_look_helper_text">Вы можете настроить практически все элементы списка переписок и самих переписок и даже сохранить свои настройки в виде темы, которой можно поделиться с друзьями!</string>
+    <string name="conversation_list">Список переписок</string>
+    <string name="reset_confirm">Сбросить на значения по умолчанию?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="custom_font_packs_title">Пакеты шрифтов</string>
+    <string name="custom_font_packs_helper_text">Позволяет загрузить установленные из Android Market шрифты для использования в chompSMS.</string>
+    <string name="custom_font_packs_summary">Вы можете использовать шрифты из других пакетов, которые можно установить из Android Market. Нажмите, чтобы просканировать пакеты. Затем вы можете использовать их в <b>Настройке списка</b> и <b>Настройке переписки</b>.</string>
+    <string name="load_installed_fonts">Загрузить установленные шрифты</string>
+    <string name="scanning_status">Сканируются пакеты:\n%1$s\n\nНайдено %2$d пакетов шрифтов</string>
+    <string name="font_packs">Пакеты шрифтов</string>
+    <string name="eye_candy">Внешний вид</string>
+    <string name="show_smiley_text_as_title">Отображать смайлы как</string>
+    <string name="always_show_timestamp_title">Всегда показывать время</string>
+    <string name="always_show_timestamp_summary2">По умолчанию метки времени отображаются между репликами каждые 15 минут.</string>
+    <string name="show_conversation_count_title">Счётчик у переписок</string>
+    <string name="show_conversation_count_summary">Подобно стандартному приложению, вы можете выбрать этот параметр, чтобы видеть счётчик сообщений в заголовке каждой переписки, например, Мартин (504)</string>
+    <string name="themes_title">Темы</string>
+    <string name="themes_summary2">Несколько простых тем для начала.</string>
+    <string name="enter_theme_name">Введите имя темы:</string>
+    <string name="failed_to_save_theme">Ошибка сохранения темы, проверьте, подключена ли SD карта.</string>
+    <string name="ascii_style_smiley">Стиль ASCII :-)</string>
+    <string name="iphone_style_smiley">Стиль iPhone :-)</string>
+    <string name="android_style_smiley">Стиль Android :-)</string>
+    <string name="number_in_title_in_conversation_title">Номер в заголовке</string>
+    <string name="number_in_title_in_conversation_summary">Если выбрано, в заголовках переписок будут показаны номера получателей.</string>
+    <string name="your_themes">Ваши темы</string>
+    <string name="available_themes">Доступные темы</string>
+
+    <!--
+    Settings screen - Contact Pics
+    -->
+    <string name="contact_pics">Изображения контактов</string>
+    <string name="show_contact_pics_title">Изображения контактов</string>
+    <string name="in_conversation_list_title">В списке переписок</string>
+    <string name="in_conversation_title">В переписке</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_contact_pics_summary">Нажмите кнопку ниже, чтобы скачать фото контактов Facebook для использования их в chomp.</string>
+    <string name="facebook_privacy_policy">Политика конфиденциальности Facebook</string>
+    <string name="download_now">Скачать</string>
+    <string name="get_contact_pics">Получить изображения контактов</string>
+    <string name="downloading_please_wait">Загрузка, пожалуйста подождите…</string>
+    <string name="failed_to_logon_to_facebook">Ошибка авторизации в Facebook, проверьте подключение к сети или повторите попытку позже.</string>
+    <string name="facebook_contacts_photos_last_downloaded_at">Последний раз фото Facebook были загружены %1$s.</string>
+    <string name="next_to_bubble_friend">Рядом с репликой (Собеседник)</string>
+    <string name="next_to_bubble_me">Рядом с репликой (Я)</string>
+    <string name="my_contact_pic">Моя картинка</string>
+    <string name="take_photo">С камеры</string>
+    <string name="choose_photo_from_gallery">Выбрать из галереи</string>
+    <string name="remove_photo">Удалить</string>
+    <string name="add_photo">Доб. фото</string>
+
+    <!--
+    Settings screen - Themes
+    -->
+    <string name="rename">Переименовать</string>
+    <string name="share">Поделиться</string>
+    <string name="delete_theme">Удалить тему %1$s?</string>
+    <string name="default_theme">Стандартная</string>
+    <string name="failed_to_apply_theme">Ошибка применения темы, проверьте, подключена ли SD карта.</string>
+    <string name="not_a_theme_file">Этот файл не является правильным файлом темы chompSMS. Попробуйте открыть файл другим приложением.</string>
+    <string name="no_theme_name">Невозможно сохранить тему, так как вы не указали название.</string>
+    <string name="import_theme_title">Импорт темы</string>
+    <string name="import_theme_message">Вы хотите импортировать тему \'%1$s\'?</string>
+    <string name="preview">Просмотр</string>
+    <string name="applying_theme">Применение темы…</string>
+    <string name="opening_theme">Открытие темы…</string>
+    <string name="author_label">От %1$s</string>
+    <string name="install_fonts">Установить шрифты</string>
+    <string name="install">Установить</string>
+    <string name="unknown_font_package">Неизвестный пакет шрифтов</string>
+    <string name="missing_fonts">Шрифты отсутствуют</string>
+    <string name="missing_fonts_helper_text">У вас нет шрифтов для этой темы.</string>
+    <string name="missing_fonts_for_theme">Отсутствуют шрифты для темы %1$s</string>
+    <string name="this_is_your_current_theme">Эта тема содержит ваши текущие настройки.</string>
+    <string name="set_as_theme">Выбрать тему</string>
+    <string name="theme_name">Название</string>
+    <string name="author">Автор</string>
+    <string name="description">Описание</string>
+    <string name="save_theme">Сохранить тему</string>
+    <string name="save_to_theme">Вы уверены, что хотите сохранить изменения темы?</string>
+    <string name="enter_new_theme_name">Введите новое имя темы:</string>
+    <string name="installing_themes">Установка тем…</string>
+    <string name="upgrading_themes">Обновление тем…</string>
+    <string name="my_theme">Моя тема</string>
+    <string name="change_author">Смена автора</string>
+    <string name="enter_author_name">Введите имя автора:</string>
+    <string name="change">Изменить</string>
+    <string name="change_description">Смена описания</string>
+    <string name="enter_description">Введите описание:</string>
+    <string name="cant_change_or_delete_packaged_theme">Невозможно изменить или удалить тему, установленную как пакет.</string>
+    <string name="cant_use_the_same_name_as_a_pre_packaged_theme">Невозможно использовать это имя как имя темы.</string>
+    <string name="install_more_themes">Установить больше тем</string>
+
+    <!--
+    Preview screen
+    -->
+    <string name="import_button_label">Импорт</string>
+    <string name="preview_theme">Просмотр темы</string>
+    
+    <!--
+    Settings screen - Quick Compose and Quick Reply
+    -->
+    <string name="quick_reply_intro">Отвечайте на входящие сообщения быстро и просто из любого места (экран блокировки, домашний экран, любые приложения) с помощью всплывающего окна Быстрого ответа.</string>
+    <string name="quick_reply_detail_text">Также включает настройки конфиденциальности и работает поверх экрана блокировки!</string>
+    <string name="quick_reply_shows_only_when_locked">Только когда заблокирован</string>
+    <string name="quick_reply_shows_only_when_unlocked">Только когда разблокирован</string>
+    <string name="one_minute">1 минута</string>
+    <string name="two_minutes">2 минуты</string>
+    <string name="five_minutes">5 минут</string>
+    <string name="ten_minutes">10 минут</string>
+    <string name="lock_mode">Режим блокировки</string>
+    <string name="unlocked_mode_title">Домашний экран / Программы</string>
+    <string name="locked_mode_only">Только когда заблокирован</string>
+    <string name="unlocked_mode_only">Только когда разблокирован</string>
+    <string name="quick_reply">Быстрый ответ</string>
+    <string name="quick_compose">Быстрое написание</string>
+    <string name="quick_compose_intro">Работаете в другом приложении, но хотите быстро писать SMS?</string>
+    <string name="quick_compose_detail_text">Также работает в <b>альбомном</b> режиме, к примеру, в играх.</string>
+    <string name="quick_compose_on_long_press_search_button">Долгий тап кнопки Поиск</string>
+    <string name="quick_compose_on_long_press_camera_button">Долгий тап кнопки Камера</string>
+    <string name="quick_compose_in_notification_drawer">В области уведомлений</string>
+    <string name="quick_compose_via_camera_button">Быстрое написание через кнопку Камера</string>
+    <string name="quick_compose_via_search_button">Быстрое написание через кнопку Поиск</string>
+    <string name="quick_compose_helper_text">Удобное и быстрое написание сообщения из домашнего экрана или любого приложения с помощью всплывающего окна Быстрого ответа.</string>
+    <string name="quick_reply_privacy_summary">Если выбрано, имя и сообщение будут отображаться только после нажатия кнопки [Показать].</string>
+    <string name="quick_reply_portrait_only_title">Только портретный</string>
+    <string name="configure_buttons">Настройка кнопок</string>
+    <string name="change_button_display_order">Поменять порядок отображения</string>
+    <string name="too_many_quick_reply_buttons_error">Вы можете расположить не более 4х активных кнопок быстрого ответа (включая кнопку Отправить).</string>
+    <string name="send_or_reply">Отправить (или Ответить)</string>
+    <string name="done_mark_as_read">Готово (пометить прочтённым)</string>
+    <string name="call_button_quick_reply_settings">Звонок (или тап на картинке контакта)</string>
+    <string name="later_leave_as_unread">Позднее (оставить непрочитанным)</string>
+    <string name="recents_pulldown_title">Вывод недавних</string>
+    <string name="remember_last">Запомнить последний</string>
+    <string name="auto_show_favs">Автопоказ избранного</string>
+    <string name="auto_show_recents">Автопоказ недавних</string>
+    <string name="recipient_shortcut">Ярлык получателя</string>
+    <string name="plus_add"><sup>+</sup>Доб.</string>
+    <string name="plus_add_smileys_emojis"><sup>+</sup>Добавить (Emoji и т.д.)</string>
+    <string name="tap_to_launch_quick_compose">Нажмите, чтобы запустить Быстрое написание.</string>
+    <string name="notification_drawer_icon">Иконка в области уведомлений</string>
+    <string name="launch_method">Метод запуска</string>
+
+    <!--
+    Settings screen - Notifications
+    -->
+    <string name="notification">Уведомления</string>
+    <string name="notification_intro">Настройте уведомления <b>по умолчанию</b>. Чтобы установить персональные настройки для отдельного контакта, выполните долгий тап на переписке с контактом в списке переписок.</string>
+    <string name="notification_help_text">Если отмечено, при получении нового сообщения будет показано уведомление. Чтобы избежать двойных уведомлений, <b>отключите</b> подобную опцию в стандартном приложении сообщений.</string>
+    <string name="notification_icon_title">Иконка уведомлений</string>
+    <string name="show_counter_on_icon">Счётчик на иконке</string>
+    <string name="select_ringtone">Рингтон</string>
+    <string name="in_app_ringtone_title">Рингтон в приложениях</string>
+    <string name="same_as_ringtone">Как рингтон</string>
+    <string name="zoom">Масштаб</string>
+    <string name="vibrate">Вибрация</string>
+    <string name="always_vibrate2">Всегда</string>
+    <string name="never_vibrate2">Никогда</string>
+    <string name="vibrate_only_when_volume_set_to_vibrate2">Если в режиме вибрации</string>
+    <string name="vibrate_pattern">Шаблон вибрации</string>
+    <string name="normal">Нормальный</string>
+    <string name="single_short">Один короткий</string>
+    <string name="long_vibrate">Долгий</string>
+    <string name="multiple_short">Несколько коротких</string>
+    <string name="multiple_long">Несколько долгих</string>
+    <string name="custom">Свой</string>
+    <string name="custom_vibrate_pattern_summary">Длительности вибрации и паузы в секундах через запятую. Пример: \"1, 0.5, 2\" — 1 сек вибрации, 0.5 сек пауза, 2 сек вибрация. Добавьте значения для более сложного шаблона.</string>
+    <string name="custom_vibrate_pattern_saved">Шаблон вибрации сохранён.</string>
+    <string name="custom_vibrate_pattern_invalid">Шаблон вибрации не сохранён, так как он неверен.</string>
+    <string name="led_blink_colour">Цвет LED-индикатора</string>
+    <string name="orange">Оранжевый</string>                   
+    <string name="magenta">Пурпурный</string>
+    <string name="cyan">Голубой</string>
+    <string name="none">Отключить</string>
+    <string name="settings_default">Стандартные настройки</string>
+    <string name="screen_comes_on">Включать экран</string>
+    <string name="screen_comes_on_help_text">Если отмечено, при входящем сообщении экран включится на несколько секунд даже в режиме ожидания.</string>
+    <string name="show_ticker">Показать содержимое</string>
+    <string name="show_ticker_help_text">Если отмечено, в строке уведомлений будет кратковременно показано имя отправителя и текст сообщения.</string>
+    <string name="privacy_title">Приватность</string>
+    <string name="hide_text_only">Скрыть текст</string>
+    <string name="hide_name_only">Скрыть имя</string>
+    <string name="hide_name_and_text">Скрыть имя и текст</string>
+    <string name="test_notification">Тест уведомления</string>
+    <string name="someone">Некто</string>
+    <string name="john">Джон</string>
+    <string name="done">Ок</string>
+    <string name="default_ringtone">Рингтон по-умолчанию (%1$s)</string>
+    <string name="silent_ringtone">Тихий</string>
+    <string name="during_phone_call">При разговоре</string>
+    <string name="flash_trackball_light_hero_title">Мигание трекболла</string>
+    <string name="flash_trackball_light_hero_never">Не мигать</string>
+    <string name="flash_trackball_light_hero_slow">Медленно</string>
+    <string name="flash_trackball_light_hero_fast">Быстро</string>
+    <string name="flash_trackball_light_magic_title">Мигание трекболла</string>
+    <string name="flash_trackball_light_magic_summary">Если отмечено, трекболл мигает при получении нового сообщения.</string>
+    <string name="incoming_message">Входящее сообщение</string>
+    <string name="during_sending">Во время отправки</string>
+    <string name="while_listening_to_music">При прослушивании музыки</string>
+    <string name="spinner_during_sending_title">Индикатор отправки</string>
+    <string name="spinner_during_sending_summary">Если выбрано, рядом с сообщениями, которые находятся в процессе отправки, будет показан анимированный индикатор.</string>
+    <string name="sending_message">Отправка сообщений</string>
+    <string name="play_sound">Проиграть звук</string>
+    <string name="play_sound_volume">Громкость звука</string>
+    <string name="play_sound_help_text">Если выбрано, при успешной отправке сообщения будет проигран звук \"vroom\".</string>
+    <string name="when_sent_vibrate_summary">Если выбрано, при успешной отправке сообщения телефон завибрирует.</string>
+
+    <!--
+    Settings screen - Repeat Notifications
+    -->
+    <string name="repeat_notification_title">Повторять уведомления</string>
+    <string name="repeat_notification_summary">Отметьте для повтора уведомлений о непрочитанных сообщениях.</string>
+    <string name="number_of_repeats_title">Количество повторов</string>
+    <string name="keep_repeating">До прочтения</string>
+    <string name="time_between_repeats_title">Интервал повтора</string>
+    <string name="fifteen_minutes">15 минут</string>
+    <string name="thirty_minutes">30 минут</string>
+    <string name="one_hour">1 час</string>
+
+    <!--
+    Settings screen - During Call
+    -->
+    <string name="play_ringtone">Играть рингтон</string>
+    <string name="play_ringtone_help_text">Если выбрано, в течение телефонного разговора при приходе сообщения проиграется выбранный рингтон.</string>
+    <string name="vibrate_during_call_help_text">Если выбрано, в течение телефонного разговора при приходе сообщения телефон завибрирует.</string>
+    <string name="play_ringtone_and_vibrate">Играть рингтон и вибрировать.</string>
+
+    <!--
+    Settings screen - While listening to music
+    -->
+    <string name="play_ringtone_while_listening_to_music_summary">Если выбрано, во время прослушивания музыки при приходе сообщения проиграется выбранный рингтон.</string>
+    <string name="vibrate_while_listening_to_music_summary">Если выбрано, во время прослушивания музыки при приходе сообщения телефон завибрирует.</string>
+
+    <!--
+     Settings screen - Security & Blacklisting
+    -->
+    <string name="security_pattern_lock">Безопасность</string>
+    <string name="blacklisting">Чёрный список</string>
+    <string name="blacklisting_helper_text2">Не хотите видеть SMS от бывшего друга или рекламного агентства? Занесите их в чёрный список (долгое нажатие в списке переписок).</string>
+    <string name="lockpattern_confirm_button_text">Подтвердить</string>
+    <string name="lockpattern_restart_button_text">Изменить</string>
+    <string name="lockpattern_settings_choose_lock_pattern">Установить комбинацию</string>
+    <string name="lockpattern_settings_change_lock_pattern">Изменить комбинацию</string>
+    <string name="show_security_pattern_title">Показать комбинацию</string>
+    <string name="lockpattern_recording_inprogress">Отпустите палец для окончания.</string>
+    <string name="lockpattern_retry_button_text">Повторить</string>
+    <string name="lockpattern_continue_button_text">Продолжить</string>
+    <string name="lockpattern_recording_intro_header">Составьте новую комбинацию</string>
+    <string name="lockpattern_recording_intro_footer">Нажмите Меню для помощи.</string>
+    <string name="lockpattern_settings_help_how_to_record">Как составлять комбинацию безопасности</string>
+    <string name="lockpattern_recording_incorrect_too_short">Соедините как минимум %d точек. Попробуйте еще:</string>
+    <string name="lockpattern_pattern_entered_header">Комбинация записана!</string>
+    <string name="lockpattern_need_to_confirm">Повторите комбинацию ещё раз:</string>
+    <string name="lockpattern_need_to_unlock_wrong">Извините, повторите ещё:</string>
+    <string name="lockpattern_pattern_confirmed_header">Ваша новая комбинация:</string>
+    <string name="lockpattern_change_lock_pattern_label">Изменить комбинацию</string>
+    <string name="lockpattern_need_to_unlock">Нарисуйте текущую комбинацию</string>
+    <string name="lockpattern_need_to_unlock_footer"/>
+    <string name="lockpattern_too_many_failed_confirmation_attempts_header">Слишком много неверных попыток!</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Повторите через %d секунд.</string>
+    <string name="lockpattern_need_to_unlock_wrong_footer"/>
+    <string name="lockpattern_need_to_unlock_chomp">Нарисуйте комбинацию для доступа к chompSMS</string>
+    <string name="clear_security_pattern">Очистить комбинацию</string>
+    <string name="while_unlocking_category_title">Разблокировав</string>
+    <string name="one_backlisted_conversation">1 переписка в чёрном списке</string>
+    <string name="blacklisted_conversations">%1$d переписок в чёрном списке</string>
+    <string name="nothing_blacklisted">Чёрный список пуст</string>
+    <string name="your_blacklisted_contacts">Тап на контакте — убрать из списка.</string>
+    <string name="unblacklist_confirm">Убрать %1$s из чёрного списка?</string>
+    <string name="security_and_blacklisting_summary">%1$s и %2$s</string>
+
+    <!--
+    Settings screen - More Stuff
+    -->
+    <string name="show_only_mobile_title">Мобильные контакты</string>
+    <string name="show_only_mobile_summary">Если выбрано, при составлении сообщения будут показаны только контакты с мобильными номерами телефонов.</string>
+    <string name="shortcuts">Разное</string>
+    <string name="keyboard_title">Клавиатура</string>
+    <string name="smiley_or_enter_key_title">Смайл или Enter</string>
+    <string name="smiley_key">Кнопка смайл</string>
+    <string name="enter_key">Кнопка Enter</string>
+    <string name="send_shortcut_title">Отправлять по Enter</string>
+    <string name="send_short_cut_summary">Если отмечено, кнопка Enter на экранной клавиатуре сработает как кнопка \'Отправить\'</string>
+    <string name="back_to_conversation_list_title">Назад к списку переписок</string>
+    <string name="back_to_conversation_list_summary">Если отмечено, при однократном нажатии \"Назад\" в переписке будет показан список переписок.</string>
+    <string name="kb_hide_after_send_title">Скрыть клав. при отправке</string>
+    <string name="kb_hide_after_send_summary">Если отмечено, клавиатура будет скрыта сразу после отправки сообщения.</string>
+    <string name="missing_language_data_title">Голосовые данные отсутствуют</string>
+    <string name="missing_language_data_error">Синтез речи требует голосовых данных, но они не установлены. Пожалуйста, установите их из Настроек системы.</string>
+    <string name="keyboard_up_in_conversation">Клавиатура в переписках</string>
+    <string name="keyboard_up_in_conversation_help_text">Если выбрано, клавиатура будет показана сразу же после захода в переписку.</string>
+    <string name="message_signature">Подпись в сообщениях</string>
+    <string name="enter_your_message_signature">Введите свою подпись:</string>
+    <string name="message_signature_summary_if_empty">&lt;Отсутствует&gt;</string>
+
+    <!--
+    Templates Settings
+    -->
+    <string name="you_have_no_templates">У вас нет шаблонов</string>
+    <string name="templates_helper_text2">Управляйте шаблонами через Меню. Для добавления в список шаблонов текста сообщения — долгий тап, выбрать \"Добавить в шаблоны\".</string>
+    <string name="edit">Правка</string>
+    <string name="this_template_will_be_deleted">Этот шаблон будет удалён.</string>
+    <string name="new_template">Новый шаблон</string>
+    <string name="new_template2">Новый шаблон:</string>
+    <string name="all_templates_will_be_deleted">Все шаблоны будут удалены.</string>
+    <string name="edit_template2">Изменить шаблон:</string>
+    <string name="add_to_templates">Добавить в шаблоны</string>
+    <string name="add_to_templates2">Добавить в шаблоны:</string>
+    <string name="your_templates">Ваши шаблоны</string>
+
+    <!--
+    Delayed Sending Settings
+    -->
+    <string name="delayed_by">%1$s секунд</string>
+    <string name="delayed_by_1_sec">1 секунда</string>
+    <string name="no_delay">Без паузы</string>
+    <string name="stop">Стоп</string>
+    <string name="delayed_sending_helper_text">Когда-нибудь отправляли сообщение, которое тут же захотелось бы отменить?</string>
+    <string name="delayed_settings_detail_text_1">Настройте период задержки перед отправкой от 1 до 3 сек, и у вас будет время отменить отправку.</string>
+    <string name="delayed_settings_detail_text_2">Также работает с Быстрым написанием и Быстрым ответом.</string>
+
+    <!--
+    Backup/Restore Settings
+    -->
+    <string name="backup_restore">Сохранение / Восстановление</string>
+    <string name="backup_title">Сохранение</string>
+    <string name="backup_summary2">Нажмите, чтобы сохранить <b>настройки</b> chompSMS на SD карту.</string>
+    <string name="restore_title">Восстановить</string>
+    <string name="restore_summary2">Нажмите, чтобы восстановить сохранённые настройки.</string>
+    <string name="restore_summary2_with_date">Нажмите, чтобы восстановить настройки, сохранённые %1$s в %2$s.</string>
+    <string name="your_preferences_have_been_backed_up">Ваши настройки сохранены на SD карту в директорию /sdcard/chomp/.</string>
+    <string name="failed_to_backup_preferences">Ошибка сохранения настроек.</string>
+    <string name="your_preferences_have_been_restored">Ваши настройки восстановлены.</string>
+    <string name="failed_to_restore_your_preferences">Ошибка восстановления настроек. Проверьте доступность SD карты.</string>
+    <string name="preferences_for_different_version_of_chomp">Извините, ваши настройки не могут быть восстановлены, так как сделаны для более старой версии ChompSMS.</string>
+    <string name="backing_up_preferences">Сохранение ваших настроек…</string>
+    <string name="restoring_your_preferences">Восстановление ваших настроек…</string>
+
+    <!--
+    Backup/Restore Settings for Android 2.2 and above.
+    -->
+    <!--  TODO: Need to add some blurb about the Privacy setting on the phone that needs to be turned on in order to backup settings to the cloud -->
+    <string name="cloud_backup_summary">Используя эти команды, вы можете сохранить настройки и сообщения в Google Cloud через возможности резервного копирования системы Android.</string>
+    <string name="last_backup_at">Последний архив</string>
+    <string name="backup_size">Размер архива</string>
+    <string name="backup_enabled">Сохранение активно</string>
+    <string name="nothing_to_restore">Пока нечего восстанавливать. Убедитесь, что сохранение активно или переставьте chomp.</string>
+    <string name="restore_date">Дата восстановления</string>
+    <string name="restore_settings_now">Восстановить сейчас</string>
+    <string name="restore_messages_now">Восстановить сообщения сейчас</string>
+    <string name="restoring_settings">Восстановление настроек…</string>
+    <string name="restoring_messages">Восстановление сообщений…</string>
+    <string name="settings_restored">Настройки восстановлены.</string>
+    <string name="failed_to_restore_settings">Ошибка восстановления настроек, попробуйте снова.</string>
+    <string name="message_restored">Сообщение восстановлены</string>
+    <string name="failed_to_restore_messages">Ошибка восстановления сообщений, попробуйте снова.</string>
+
+    <!--
+    TextFreek Settings
+    -->
+    <string name="textfreek_service_about_summary">Сервис TextFreek позволяет вам отправлять БЕСПЛАТНЫЕ сообщения другим пользователям TextFreek на iPhone, iPod, Android и BlackBerry!</string>
+    <string name="textfreek_title">TextFreek</string>
+    <string name="textfreek_title2">TextFreek - БЕСПЛАТНОЕ общение</string>
+    <string name="textfreek_service">TextFreek сервис</string>
+    <string name="your_details">Ваши данные</string>
+    <string name="register">Регистрация</string>
+    <string name="mobile">Моб. номер</string>
+    <string name="name">Имя</string>
+    <string name="textfreek_name_helper_text">Вы никогда не увидите это имя, но оно будет видно другим пользователям TextFreek на устройствах Apple при получении от вас сообщений.</string>
+    <string name="register_now">Зарегистрироваться</string>
+    <string name="register_now_dialog_title">Зарегистироваться сейчас?</string>
+    <string name="register_now_dialog_message">Ваша копия chompSMS поддерживает TextFreek. Хотите зарегистрироваться сейчас?</string>
+    <string name="visit_invite_page">Посетить страницу приглашения</string>
+    <string name="invite_friends">Пригласить друзей</string>
+    <string name="inviting_your_friends">Приглашение ваших друзей…</string>
+    <string name="textfreek_not_registered">Вы не зарегистрированы в TextFreek. Нажмите для регистрации.</string>
+    <string name="textfreek_registered">Вы зарегистрированы в TextFreek с номером %1$s. Расскажите друзьям, что вы можете общаться через TextFreek!</string>
+    <string name="entry_your_mobile_number_for_textfreek">Введите ваш номер мобильного без интернационального префикса или кода страны.</string>
+    <string name="mobile_numbers_country">Выберите страну вашего оператора</string>
+    <string name="registration_failed">Ошибка регистрации, проверьте соединение с интернет.</string>
+    <string name="registering">Регистрация…</string>
+    <string name="updating">Обновление…</string>
+    <string name="discovering_your_friends">Поиск ваших друзей…</string>
+    <string name="one_friend_on_textfreek">1 друг в TextFreek</string>
+    <string name="x_friends_on_textfreek">%1$d друзей в TextFreek</string>
+    <string name="textfreek_friends">TextFreek друзья</string>
+    <string name="delete_textfreek_contact_confirm">Вы уверены, что хотите удалить этот контакт из списка контактов TextFreek?</string>
+    <string name="number_already_registered_text2">Номер %1$s уже зарегистрирован. вы уверены, что это ваш номер?</string>
+    <string name="failed_to_update">Ошибка обновления деталей TextFreek, проверьте соединение с интернет.</string>
+    <string name="failed_to_query_contacts">Ошибка запроса контактов, проверьте соединение с интернет.</string>
+    <string name="discover_contacts_summary3">Кнопка Отправить %1$s, когда отправка идёт через  TextFreek.</string>
+    <string name="discover_contacts_summary3_orange">оранжевая</string>
+    <string name="textfreek_friends_summary">Друга нет в этом списке? Почему бы не отправить ему приглашение в TextFreek! (Долгий тап в списке переписок).</string>
+    <string name="adding_friend">Добавление друга…</string>
+    <string name="contact_is_not_on_the_textfreek_network">Контакт не зарегистрирован в TextFreek</string>
+    <string name="remove">Удалить</string>
+    <string name="the_textfreek_network_only_supports_sms_at_present">На данный момент сеть TextFreek поддерживает только SMS.\n\nОтправить это MMS через вашего оператора?</string>
+    <string name="upgrade_donation">Обновить пожертвование</string>
+    <string name="change_license_to_1_year">Чтобы использовать TextFreek и отключить рекламу, ваше пожертвование будет изменено на срочное (оно истечёт в течение 1 года). Вы уверены, что хотите зарегистрироваться в TextFreek?</string>
+    <string name="textfreek_service_not_available">Сервер регистрации временно недоступен. Пожалуйста, попробуйте снова через несколько минут.</string>
+    <string name="textfreek_account_missing">Мы не можем получить данные вашего Google аккаунта. Это необходимо для продолжения регистрации. Проверьте Настройки, Учётные записи.</string>
+    <string name="textfreek_authentication_failed">Вы не вошли в свой Google аккаунт. Откройте приложение Market, войдите в аккаунт и попробуйте снова.</string>
+    <string name="textfreek_phone_too_many_registrations">В данный момент вы используете слишком много приложений, использующих Android Cloud to Device (которое нужно и для TextFreek). Пожалуйста, удалите одно или более приложений и попробуйте снова.</string>
+    <string name="invite_to_textfreek">Пригласить в TextFreek</string>
+    <string name="invite_to_textfreek_summary">Этот контакт не зарегистрирован в TextFreek, вы уверены, что хотите отправить ему текст с приглашением?</string>
+    <string name="textfreek_invite">Эй, я установил классное приложение, позволяющее общаться бесплатно! Глянь: http://textfreek.com/invite</string>
+    <string name="terms_of_service">Условия использования</string>
+    <string name="you_must_select_a_country">Вы должны выбрать страну</string>
+    <string name="textfreek">TextFreek</string>
+    <string name="just_joined_textfreek">%1$s добавился в TextFreek как друг. Почему бы не отправить ему \'Привет\'? Это бесплатно!</string>
+    <string name="chompsms_team">Команда chompSMS</string>
+    <string name="invite">Пригласить</string>
+    <string name="continue_on">Продолжить</string>
+    <string name="textfreek_welcome_no_contacts">Поздравляем! Вы зарегистрировались в TextFreek. Как только ваши друзья подключатся, вы получите уведомление и сможете начать общаться совершенно бесплатно!</string>
+    <string name="textfreek_welcome_has_contacts">Поздравляем! Вы зарегистрировались в TextFreek и можете начать бесплатное общение со своими друзьями!</string>
+    <string name="suggest_invite">Ни один из ваших друзей не пользуется TextFreek. Хотите пригласить их?</string>
+    <string name="sorry_you_cant_reply_to_chompsms_team_messages">Извините, вы не можете отвечать на сообщения от Команды chompSMS.</string>
+    <string name="recipient_not_registered">Извините, мы не можем отправить это сообщение, поскольку получатель больше не является пользователем TextFreek.</string>
+    <string name="rediscover">Искать снова</string>
+    <string name="reset_textfreek">Сбросить TextFreek</string>
+    <string name="failed_to_unregister">Ошибка отмены регистрации, проверьте соединение с интернет.</string>
+    <string name="cannot_send_not_registered">Вы не можете отправлять сообщения через сеть TextFreek, сначала необходимо зарегистрироваться (Настройки, TextFreek).</string>
+
+    <!--
+    StartTalking settings
+    -->
+    <string name="starttalking_title">StartTalking</string>
+    <string name="starttalking_summary">Hands-free и Eyes-free общение!</string>
+    <string name="starttalking_summary2">chompSMS теперь поддерживает режим вождения: Голосовые сообщения, используя StartTalking.</string>
+
+    <!--
+    Customize conversation
+    -->
+    <string name="incoming_bubble_style">Стиль пузырька входящих</string>
+    <string name="incoming_bubble_color">Цвет пузырька входящих</string>
+    <string name="incoming_font_color">Цвет текста входящих</string>
+    <string name="incoming_font">Шрифт входящих</string>
+    <string name="outgoing_bubble_style">Стиль пузырька исходящих</string>
+    <string name="outgoing_bubble_color">Цвет пузырька исходящих</string>
+    <string name="outgoing_font_color">Цвет текста исходящих</string>
+    <string name="outgoing_font">Шрифт исходящих</string>
+    <string name="background">Фон</string>
+    <string name="date_color">Цвет даты</string>
+    <string name="date_font">Шрифт даты</string>
+    <string name="conversation_background_images">Картинки</string>
+    <string name="conversation_background_colour">Цвет</string>
+    <string name="have_you_checked_out_the_customizations_in_chomp">Ты видел настройки внешнего вида в chomp?</string>
+    <string name="ill_have_a_look_now">Сейчас гляну.</string>
+    <string name="i_love_customizing_the_look_and_feel_of_everything">Мне нравится настраивать внешний вид.</string>
+    <string name="the_best_part_about_it_is_that_you_can_now_share_themes_with_all_of_your_friends">Классно, теперь можно делиться своими темами с друзьями. Говорят, скоро будет ещё больше настроек!</string>
+    <string name="check_out_my_theme">Посмотри мою тему!</string>
+    <string name="save_settings_confirm_text">Вы точно хотите сохранить изменения?</string>
+    <string name="red">Красный</string>
+    <string name="green">Зелёный</string>
+    <string name="blue">Синий</string>
+    <string name="transparency">Прозрачность</string>
+    <string name="package_label">Пакет</string>
+    <string name="font">Шрифт</string>
+    <string name="size">Размер</string>
+    <string name="style">Стиль</string>
+    <string name="system">Системный</string>
+    <string name="bold">Жирный</string>
+    <string name="italic">Курсив</string>
+    <string name="bold_italic">Жирный курсив</string>
+    <string name="counters_font">Шрифт счётчиков</string>
+    <string name="counters_font_color">Цвет счётчиков</string>
+    <string name="do_you_like_this">Вам нравится?</string>
+
+    <!--
+    Customize conversation list
+    -->
+    <string name="contact_font_color">Цвет текста контакта</string>
+    <string name="message_text_font_color">Цвет текста сообщения</string>
+    <string name="date_font_color">Цвет шрифта даты</string>
+    <string name="divider_color">Цвет разделителя</string>
+    <string name="fred">Фред</string>
+    <string name="are_you_going_to_the_pub_tonight">Пойдём в бар сегодня?</string>
+    <string name="michelle">Мишель</string>
+    <string name="honey_dont_forget_to_get_milk_on_the_way_home">Дорогой, не забудь купить молоко</string>
+    <string name="dad">Папа</string>
+    <string name="your_mother_is_driving_me_crazy">Твоя мама сводит меня с ума!</string>
+    <string name="frank">Фрэнк</string>
+    <string name="are_you_up_for_a_movie_saturday_night">Как насчёт кино в субботу вечером?</string>
+    <string name="angela">Анжела</string>
+    <string name="thanks_for_the_invite">Спасибо за приглашение</string>
+    <string name="mike">Майк</string>
+    <string name="cant_make_it_next_weekend">В следующий выходной не могу :-(</string>
+    <string name="dentist">Дантист</string>
+    <string name="reminder_you_have_an_appointment">Напоминание: вы записаны завтра на 10:30</string>
+    <string name="contact_font">Шрифт контакта</string>
+    <string name="message_text_font">Шрифт сообщения</string>
+
+    <!--
+    Save to SD Card screen
+    -->
+    <string name="save_to_sd_card">Сохранить на SD-карту</string>
+    <string name="save_selected">Сохранить выбранное</string>
+    <string name="save_to_sdcard_success_single">Вложение сохранено на SD-карту</string>
+    <string name="save_to_sdcard_success_multiple">Вложения сохранены на SD-карту</string>
+    <string name="save_to_sdcard_fail">Ошибка сохранения вложения на SD-карту</string>
+    <string name="overwrite">Переписать</string>
+    <string name="overwrite_confirm">Следующие файлы уже существуют в каталоге загрузок на SD-карте: %1$s. Хотите заменить их?</string>
+
+    <!--
+    Contacts screen
+    -->
+    <string name="fast_scroll_alphabet"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="phone_summary">%1$s: %2$s</string>
+    <string name="select_all">Выбрать все</string>
+    <string name="select_none">Отменить выбор</string>
+    <string name="all_contacts">Все контакты</string>
+    <string name="groups">Группы</string>
+    <string name="my_contacts">Мои контакты</string>
+    <string name="favourites">Избранные</string>
+    <string name="number_of_contacts">Количество контактов: %1$d</string>
+    <string name="number_of_contacts_empty">Количество контактов:</string>
+
+    <!--
+    Notifications
+    -->
+    <string name="unread_messages">%d непрочитанных сообщений.</string>
+    <string name="unread_message">1 непрочитанное сообщение.</string>
+    <string name="new_messages">Новые сообщения</string>
+    <string name="new_message_notification_text">Новое сообщение</string>
+    <string name="received_chomp_sms_credits">Получено %1$d chompSMS кредитов</string>
+    <string name="send_failed_with_text">Ошибка отправки: %1$s</string>
+    <string name="failed_message_notification_text">Неудавшееся сообщение</string>
+    <string name="failed_messages">Неудавшиеся сообщения</string>
+    <string name="failed_messages_with_count">%d неудавшихся сообщений.</string>
+    <string name="failed_message">1 неудавшееся сообщение.</string>
+
+    <!--
+     Quick Compose dialog
+    -->
+    <string name="compose_a_new_message">Написать новое сообщение</string>
+    <string name="message_field_hint">Напишите сообщение здесь…</string>
+    <string name="quick_compose_not_enabled">Вы не активировали <b>Быстрый ответ</b> в настройках chompSMS.</string>
+
+    <!--
+    App Widget
+    -->
+    <string name="chompsms_big_widget">chompSMS - Большой</string>
+    <string name="no_unread_messages">Нет непрочитанных сообщений</string>
+    <string name="this_message_will_be_marked_as_read">Это сообщение будет отмечено как прочитанное.</string>
+    <string name="ok_confirm">OK?</string>
+    <string name="landscape_not_supported">Извините, альбомный режим в данный момент не поддерживается.
+
+Мы прилагаем все усилия, чтобы реализовать эту возможность.
+
+Пока что тапните на этом виджете, чтобы открыть chompSMS.</string>
+
+    <!--
+    Emoji/Smiley Panel
+    -->
+    <string name="ascii_style_smileys_helper_text">Не все телефоны поддерживают графические emoji, поэтому на этой странице вам доступен старый текстовый формат.</string>
+    <string name="recents_helper_text">На этой странице автоматически отображаются недавно использованные иконки.</string>
+    <string name="install_emoji_plugin">Для использования emoji иконок необходимо установить \'chompSMS emoji add-on\', доступный в Android Market. Установить сейчас?</string>
+
+    <!--
+    Scheduled SMS
+    -->
+    <string name="scheduled_sms">Запланированные SMS</string>
+    <string name="text">Текст</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="repeat">Повтор</string>
+    <string name="today">Сегодня</string>
+    <string name="every_day">Каждый день</string>
+    <string name="every_week">Каждую неделю</string>
+    <string name="every_2_weeks">Каждые 2 недели</string>
+    <string name="every_month">Каждый месяц</string>
+    <string name="every_year">Каждый год</string>
+    <string name="scheduled_date_is_in_the_past">Дата и Время не могут быть в прошлом.</string>
+    <string name="recipients">Получатели</string>
+    <string name="today2">сегодня</string>
+    <!-- %1$s are the recipients, %2$s is the date, %3$s is the time -->
+    <string name="scheduled_message_wrap_up_with_no_repeats">Запланированные SMS будут отправлены адресату %1$s %2$s в %3$s.</string>
+    <!-- %1$s are the recipients, %2$s is the date, %3$s is the time, %4$s is the repeat frequency e.g. every 2 weeks after. -->
+    <string name="scheduled_message_wrap_up_with_repeats">Запланированные SMS будут отправлены адресату %1$s %2$s в %3$s и потом %4$s.</string>
+    <!-- The following are the frequencies that are inserted into the above 'scheduled_message_wrap_up_with_no_repeats' string at %4$s -->
+    <string name="every_day_after">каждый день</string>
+    <string name="every_week_after">каждую неделю</string>
+    <string name="every_2_weeks_after">каждые 2 недели</string>
+    <string name="every_month_after">каждый месяц</string>
+    <string name="every_year_after">каждый год</string>
+    <string name="scheduled_messages_helper_text2">Вы можете запланировать отправку SMS, однократную или периодическую. К примеру, приглашение на день рождения.</string>
+    <string name="scheduled_messages">Запланированные сообщения</string>
+    <string name="you_cant_scheduled_sending_of_mms_messages">Вы не можете запланировать отправку MMS сообщений.</string>
+    <string name="cant_schedule_an_empty_message">Вы не можете запланировать отправку пустого сообщения.</string>
+    <string name="you_need_to_specify_one_or_more_recipients">Вы должны указать одного или нескольких получателей перед отправкой запланированного сообщения.</string>
+    <string name="created_label">Создано</string>
+    <string name="your_scheduled_messages">Запланированные сообщения</string>
+
+    <!--
+    Icon Widget
+    -->
+    <string name="chompsms_icon_widget">chompSMS - Иконка</string>
+
+    <!--
+    Featured apps
+    -->
+    <string name="featured_apps">Рекомендуемые приложения</string>
+    <string name="cool_apps">Крутые приложения</string>
+    <string name="other_hot_apps">Другие программы</string>
+    <string name="lookout_mobile_security_title">Lookout Security &amp; Antivirus</string>
+    <string name="lookout_mobile_security_summary">Более 12 миллионов пользователей доверяют Lookout Mobile Security. Скачать бесплатно!</string>
+
+    <!--
+     Trial licenses.
+    -->
+    <string name="ad_free_period_finished">Ваш период без рекламы истек, но вы можете продолжать использовать chompSMS бесплатно.\n\nЕсли вы хотите купить бессрочную лицензию (включающую все обновления) для удаления баннеров, мы бы очень оценили это и были благодарны за поддержку!</string>
+
+    <!--
+    Generic errors
+    -->
+    <string name="unable_to_open_database">Невозможно открыть базу chompSMS: попробуйте удалить программу, перезагрузиться и снова установить chompSMS.</string>
+    <string name="cant_access_contacts_at_this_time">Контакты временно недоступны.</string>
+    <string name="cant_forward_mms_because_mms_content_hasnt_been_downloaded_yet">Невозможно переслать MMS, так как оно ещё не загружено. Загрузите MMS и попробуйте снова.</string>
+    <string name="failed_to_load_image_running_low_on_memory">Недостаточно памяти для загрузки изображения, завершите chompSMS и перезапустите его, если проблема сохранится.</string>
+    <string name="failed_to_upgrade_themes">Ошибка обновления тем, проверьте, что ваша SD-карта подключена и не переполнена.</string>
+
+    <!--
+    Warning messages
+    -->
+    <string name="conflicting_sms_app">Внимание: Приложение \'%1$s\' пересекается с chompSMS при получении SMS и MMS. Вы должны удалить \'%1$s\' для корректной работы chompSMS.</string>
+    <string name="conflicting_sms_apps">Внимание: Следующие приложения пересекаются с chompSMS при получении SMS и MMS. Вы должны удалить их для корректной работы chompSMS.\n\n%1$s</string>
+
+    <!--
+    Common menu options
+    -->
+    <string name="discard">Отмена</string>
+    <string name="save">Сохранить</string>
+
+    <!--
+    Common button names
+    -->
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="more_link">Больше…</string>
+    <string name="less_link">Меньше…</string>
+
+    <!--
+    Title of error dialog
+    -->
+    <string name="error">Ошибка</string>
+
+    <!--
+    Full screen adverts.
+    -->
+    <string name="full_screen_helper_text">Реклама поддерживает дальнейшую разработку chompSMS, спасибо!
+    
+Теперь вы можете посмотреть всего ОДИН интерактивный видеоклип в свободное время, взамен мы не будем отображать баннеры в течение целого дня.</string>
+    <string name="view_now">Посмотреть сейчас</string>
+    <string name="view_interstitial_now_summary_text">Ммм, возможно сейчас самое время, чтобы поддержать chompSMS и навсегда избавиться от этой рекламы!</string>
+    <string name="please_wait">Пожалуйста, подождите…</string>
+    <string name="no_full_screen_advert_thanks">Мы не смогли подобрать подходящую рекламу для вас, но тем не менее, вы попытались поддержать нас, спасибо!</string>
+    <string name="buy_license_google_checkout">Купить лицензию (Google Checkout)</string>
+    <string name="messagelist_sender_self">Я</string>
+    <string name="sent_on">Отправлено: %s</string>
+    <string name="broadcast_from_to">от %1$s к %2$s</string>
+    <string name="cannot_forward_drm_obj">Объект DRM, содержащийся в этом сообщении, нельзя переслать.</string>
+</resources>
