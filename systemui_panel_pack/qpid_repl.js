@@ -2,8 +2,9 @@
 // Script replaces string id's in QPids.smali by values taken from public.xml
 
 var fso = WScript.CreateObject("Scripting.FileSystemObject");
-var pubPath = "SystemUI\\res\\values\\public.xml";
-var idsPath = "SystemUI\\smali\\com\\lidroid\\systemui\\quickpanel\\QPids.smali";
+var basePath = fso.GetParentFolderName(WScript.ScriptFullName);
+var pubPath = fso.BuildPath(basePath, "SystemUI\\res\\values\\public.xml");
+var idsPath = fso.BuildPath(basePath, "SystemUI\\smali\\com\\lidroid\\systemui\\quickpanel\\QPids.smali");
 
 var rePubExtract = new RegExp('name="(qp_.+?)" id="(.+?)"', "g");
 // should place \1 or \b instead of (.+?) at the end of the line but it doesn't work :(
@@ -36,7 +37,7 @@ var sPub = txstPub.ReadAll();
 txstPub.Close();
 
 var dic = new Array();
-var txstLog = fso.CreateTextFile(WScript.ScriptName+".log");
+var txstLog = fso.CreateTextFile(WScript.ScriptFullName+".log");
 var txstOut;
 
 var found;
