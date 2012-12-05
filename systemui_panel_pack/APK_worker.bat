@@ -13,10 +13,17 @@ setlocal
 :: Turn on expandind of the variables on execute rather than on parse
 setlocal EnableDelayedExpansion
 
-set CDir=%CD%
+set CDir=%~dp0%
+set OldCD=%CD%
 set APKName=SystemUI
+:: Use aapt from SDK by default
+set AAPT=aapt_SDK.exe
+:: ! Uncomment this line ONLY if you have troubles building/decompiling apk's !
+:: set AAPT=aapt_Custom.exe
 
 :: Check all needed files
+
+copy /y "%CDir%\%AAPT%" "%CDir%\aapt.exe" > nul
 
 :: Java
 java -version 2> nul
@@ -87,6 +94,9 @@ if "!auto!"=="0" (
 	)
 )
 
+:: apktool.jar requires aapt.exe to be in current directory
+cd "%CDir%"
+
 goto Step!step!
 
 :: 1. Разобрать SystemUI.apk
@@ -95,12 +105,12 @@ goto Step!step!
 
 echo ### Step 1. Decompile %APKName%.apk to %CDir%\%APKName%
 
-rd /s/q %CDir%\%APKName% 2> nul
+rd /s/q "%CDir%\%APKName%" 2> nul
 :: (Re)Install all the frameworks (sometimes required)
 rd /s/q "%HOMEDRIVE%%HOMEPATH%\apktool\framework" 2> nul
-FOR %%F IN (%CDir%\framework\*.apk) DO java -jar %CDir%\apktool.jar if %%F
+FOR %%F IN ("%CDir%\framework\*.apk") DO java -jar "%CDir%\apktool.jar" if "%%F"
 :: Decompile
-java -jar %CDir%\apktool.jar d %CDir%\%APKName%.apk %CDir%\%APKName%
+java -jar "%CDir%\apktool.jar" d "%CDir%\%APKName%.apk" "%CDir%\%APKName%"
 
 if errorlevel 1 goto :Err
 set /a step=!step!+1
@@ -117,18 +127,18 @@ goto Prompt
 
 echo ### Step 2. Add custom files and modify values
 
-IF EXIST %CDir%\%APKName%\res\drawable-hdpi (
-	copy /y %CDir%\%QPFolder%\res\drawable-hdpi\* %CDir%\%APKName%\res\drawable-hdpi
+IF EXIST "%CDir%\%APKName%\res\drawable-hdpi" (
+	copy /y "%CDir%\%QPFolder%\res\drawable-hdpi\*.???" "%CDir%\%APKName%\res\drawable-hdpi"
 )
-IF EXIST %CDir%\%APKName%\res\drawable-mdpi (
-	copy /y %CDir%\%QPFolder%\res\drawable-mdpi\* %CDir%\%APKName%\res\drawable-mdpi
+IF EXIST "%CDir%\%APKName%\res\drawable-mdpi" (
+	copy /y "%CDir%\%QPFolder%\res\drawable-mdpi\*.*" "%CDir%\%APKName%\res\drawable-mdpi"
 )
-IF EXIST %CDir%\%APKName%\res\drawable-ldpi (
-	copy /y %CDir%\%QPFolder%\res\drawable-ldpi\* %CDir%\%APKName%\res\drawable-ldpi
+IF EXIST "%CDir%\%APKName%\res\drawable-ldpi" (
+	copy /y "%CDir%\%QPFolder%\res\drawable-ldpi\*.*" "%CDir%\%APKName%\res\drawable-ldpi"
 )
 
-copy /y %CDir%\%QPFolder%\res\layout\* %CDir%\%APKName%\res\layout
-CScript xml_add.js %QPFolder%
+copy /y "%CDir%\%QPFolder%\res\layout\*" "%CDir%\%APKName%\res\layout"
+CScript "%CDir%\xml_add.js" "%QPFolder%"
 
 set /a step=!step!+1
 goto Prompt
@@ -140,11 +150,11 @@ goto Prompt
 
 echo ### Step 3. Build temp %APKName%.apk from %CDir%\%APKName% and decompile it
 
-java -jar %CDir%\apktool.jar b -f %CDir%\%APKName%
+java -jar "%CDir%\apktool.jar" b -f "%CDir%\%APKName%"
 
 if errorlevel 1 goto :Err
 
-java -jar %CDir%\apktool.jar d %CDir%\%APKName%\dist\%APKName%.apk %CDir%\%APKName%\dist\%APKName%
+java -jar "%CDir%\apktool.jar" d "%CDir%\%APKName%\dist\%APKName%.apk" "%CDir%\%APKName%\dist\%APKName%"
 
 if errorlevel 1 goto :Err
 
@@ -160,9 +170,9 @@ goto Prompt
 
 echo ### Step 4. Copy public.xml and smali, replace IDs
 
-copy /y %CDir%\%APKName%\dist\%APKName%\res\values\public.xml %CDir%\%APKName%\res\values
-xcopy %CDir%\%QPFolder%\smali %CDir%\%APKName%\smali /e /i /y
-CScript qpid_repl.js
+copy /y "%CDir%\%APKName%\dist\%APKName%\res\values\public.xml" "%CDir%\%APKName%\res\values"
+xcopy "%CDir%\%QPFolder%\smali" "%CDir%\%APKName%\smali" /e /i /y
+CScript "%CDir%\qpid_repl.js"
 
 set /a step=!step!+1
 goto Prompt
@@ -174,10 +184,10 @@ goto Prompt
 
 echo ### Step 5. Build final %APKName%.apk
 
-rd /s/q %CDir%\%APKName%\dist
-rd /s/q %CDir%\%APKName%\build
+rd /s/q "%CDir%\%APKName%\dist"
+rd /s/q "%CDir%\%APKName%\build"
 
-java -jar %CDir%\apktool.jar b -f %CDir%\%APKName%
+java -jar "%CDir%\apktool.jar" b -f "%CDir%\%APKName%"
 
 if errorlevel 1 goto :Err
 
@@ -197,15 +207,17 @@ goto Prompt
 
 echo ### Step 6. Add/replace files to the original apk (save as %APKName%_mod.apk)
 
-copy /y %CDir%\%APKName%.apk %CDir%\%APKName%_mod.apk
+copy /y "%CDir%\%APKName%.apk" "%CDir%\%APKName%_mod.apk"
 :: change dir so that 7zip could put the files to the right places
-cd %CDir%\%APKName%\build\apk
+cd "%CDir%\%APKName%\build\apk"
 
-%CDir%\7za a -tzip -mx5 %CDir%\%APKName%_mod.apk classes.dex
-%CDir%\7za a -tzip -mx0 %CDir%\%APKName%_mod.apk resources.arsc
-%CDir%\7za a -tzip -mx0 %CDir%\%APKName%_mod.apk res\drawable-hdpi\qp_*.png
-%CDir%\7za a -tzip -mx5 %CDir%\%APKName%_mod.apk res\layout\status_bar_expanded.xml
-%CDir%\7za a -tzip -mx5 %CDir%\%APKName%_mod.apk res\layout\qp_*.xml
+"%CDir%\7za.exe" a -tzip -mx5 "%CDir%\%APKName%_mod.apk" "classes.dex"
+"%CDir%\7za.exe" a -tzip -mx0 "%CDir%\%APKName%_mod.apk" "resources.arsc"
+"%CDir%\7za.exe" a -tzip -mx0 "%CDir%\%APKName%_mod.apk" "res\drawable-hdpi\qp_*.png"
+"%CDir%\7za.exe" a -tzip -mx5 "%CDir%\%APKName%_mod.apk" "res\layout\status_bar_expanded.xml"
+"%CDir%\7za.exe" a -tzip -mx5 "%CDir%\%APKName%_mod.apk" "res\layout\qp_*.xml"
+
+cd "%CDir%"
 
 set /a step=!step!+1
 goto Prompt
@@ -213,9 +225,11 @@ goto Prompt
 :Step7
 
 echo Script finished. Modified apk is saved as %CDir%\%APKName%_mod.apk
-pause
-goto :EOF
+goto :End
 
 :Err
 echo Error occured - process not finished
+
+:End
+cd "%OldCD%"
 pause
