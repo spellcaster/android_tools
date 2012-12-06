@@ -1,4 +1,4 @@
-/framework
+/framework/*.apk
 /SystemUI
 SystemUI.apk
 SystemUI_mod.apk

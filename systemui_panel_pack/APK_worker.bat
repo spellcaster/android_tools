@@ -127,14 +127,16 @@ goto Prompt
 
 echo ### Step 2. Add custom files and modify values
 
+:: ! cmd is a stupid piece of shit unable to filter files by mask. So we only copy PNG files
+:: ignoring others (i.e. empty files that allow adding empty folders to git. Arrgh, this REALLY sucks!)
 IF EXIST "%CDir%\%APKName%\res\drawable-hdpi" (
-	copy /y "%CDir%\%QPFolder%\res\drawable-hdpi\*.???" "%CDir%\%APKName%\res\drawable-hdpi"
+	copy /y "%CDir%\%QPFolder%\res\drawable-hdpi\*.png" "%CDir%\%APKName%\res\drawable-hdpi"
 )
 IF EXIST "%CDir%\%APKName%\res\drawable-mdpi" (
-	copy /y "%CDir%\%QPFolder%\res\drawable-mdpi\*.*" "%CDir%\%APKName%\res\drawable-mdpi"
+	copy /y "%CDir%\%QPFolder%\res\drawable-mdpi\*.png" "%CDir%\%APKName%\res\drawable-mdpi"
 )
 IF EXIST "%CDir%\%APKName%\res\drawable-ldpi" (
-	copy /y "%CDir%\%QPFolder%\res\drawable-ldpi\*.*" "%CDir%\%APKName%\res\drawable-ldpi"
+	copy /y "%CDir%\%QPFolder%\res\drawable-ldpi\*.png" "%CDir%\%APKName%\res\drawable-ldpi"
 )
 
 copy /y "%CDir%\%QPFolder%\res\layout\*" "%CDir%\%APKName%\res\layout"
